@@ -1,0 +1,486 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
+.b {
+    color: #000000 !important;
+}
+
+.section-inner {
+    width: 1170px;
+    margin: 0 auto;
+    padding-top: 1px;
+}
+
+.s1 {
+    height: 650px;
+    background: url("img/s1.bg.png") no-repeat;
+    background-size: cover;
+    color: white;
+    position: relative;
+}
+
+.s1 .slide {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 100%;
+}
+
+.slider .slick-list, .slider .slick-track {
+    height: 100%;
+}
+
+.slider .slick-dots {
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translate(-50%, 0);
+    padding: 0;
+}
+
+.slider .slick-dots li {
+    display: inline-block;
+    margin: 10px;
+}
+
+.slider .slick-dots li button {
+    font-size: 0;
+    width: 16px;
+    height: 16px;
+    background: #ffffff;
+    border: none;
+    border-radius: 50%;
+    padding: 0;
+    outline: none;
+    cursor: pointer;
+}
+
+.slider .slick-dots li.slick-active button {
+    border: 5px solid black;
+    margin-bottom: 30px;
+}
+
+.s1.static {
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    flex-direction: column;
+    height: 350px;
+}
+
+.s1.static .section-inner h2 {
+    display: inline-block;
+    padding: 0 80px 0 20px;
+}
+
+.s1.static.contact {
+    background: #f0f0f2 url("img/b-s1-bg.jpg") no-repeat center right;
+}
+
+.s1.static.blog {
+    background: #f6f6f8 url("img/blog-s1-bg.jpg") no-repeat center right;
+}
+
+.s1.static.portfolio {
+    background: #e2e2e2 url("img/p-s1-bg.jpg") no-repeat center;
+}
+
+.s1.static.about {
+    background: #f0f0f2 url("img/b-s1-bg.jpg") no-repeat center right;
+}
+
+.s2.about h3 {
+    text-transform: uppercase;
+    font-size: 18px;
+}
+
+.s2.about p {
+    font-size: 14px;
+    color: #a1a1a1;
+    line-height: 30px;
+}
+
+.s3.about .section-inner > h1 {
+    text-transform: uppercase;
+    font-size: 30px;
+    font-weight: normal;
+    letter-spacing: 5px;
+}
+
+.s3.about .section-inner > h1,
+.s3.about .section-inner > p {
+    text-align: center;
+}
+
+.s3.about .section-inner > p {
+    color: #a1a1a1;
+    font-size: 14px;
+    line-height: 30px;
+}
+
+.s3.about .photo {
+    height: 630px;
+    width: 360px;
+    background: #ffffff;
+}
+
+.s3.about .photo img {
+    width: 100%;
+}
+
+.s3.about .photo div {
+    padding: 0 36px;
+}
+
+.s3.about .photo h2 {
+    font-size: 24px;
+    text-transform: uppercase;
+    margin: 20px 0 10px;
+}
+
+.s3.about .photo h5 {
+    font-size: 16px;
+    color: #a1a1a1;
+    margin: 0 0 30px;
+}
+
+.s3.about .photo p {
+    font-size: 14px;
+    color: #a1a1a1;
+    line-height: 20px;
+}
+
+.s4.contact .photo {
+    width: 352px;
+}
+
+.s4.contact .photo h2 {
+    text-transform: uppercase;
+    letter-spacing: .4em;
+    font-size: 18px;
+    font-weight: normal;
+}
+
+.s4.contact .section-inner > h1 {
+    text-transform: uppercase;
+    font-size: 30px;
+    font-weight: normal;
+    letter-spacing: 5px;
+    margin: 70px 0 50px;
+}
+
+.s4.contact .section-inner > p {
+    font-size: 14px;
+    color: #a1a1a1;
+    line-height: 30px;
+    margin-bottom: 70px;
+}
+
+.s4.contact .section-inner > h1,
+.s4.contact .section-inner > p {
+    text-align: center;
+}
+
+.s4.contact .section-inner .photo-wrapper {
+    display: flex;
+    justify-content: space-between;
+}
+
+.s4.contact .photo p {
+    color: #a1a1a1;
+    font-size: 14px;
+    line-height: 30px;
+}
+
+.s2.contact .section-inner {
+    display: flex;
+    justify-content: space-between;
+}
+
+.s2.contact .info {
+    width: 345px;
+}
+
+.s2.contact form {
+    width: 748px;
+}
+
+.s2.contact form #name,
+.s2.contact form #email {
+    width: 360px;
+    height: 40px;
+    margin: 80px 0 20px;
+    padding: 0 10px;
+    box-sizing: border-box;
+    border: 1px solid #aaa;
+}
+
+.s2.contact form #name:focus,
+.s2.contact form #email:focus {
+    outline: none;
+    border-left-width: 4px;
+}
+
+.fa-share-alt:before {
+    color: #cccccc;
+}
+
+.fa-heart:before {
+    color: #cccccc;
+}
+
+.s2.contact form #email {
+    float: right;
+}
+
+.s2.contact form #message {
+    width: 100%;
+    height: 150px;
+    box-sizing: border-box;
+    font-family: sans-serif;
+    padding: 10px;
+    outline: none;
+}
+
+.s2.contact form #message:focus {
+    border-left-width: 4px;
+}
+
+.s2.contact form [type=button] {
+    background: #000000;
+    padding: 15px 45px;
+    color: #ffffff;
+    text-transform: uppercase;
+    margin: 30px 0 50px;
+    font-size: 14px;
+    border: none;
+    cursor: pointer;
+}
+
+.s2 h2 {
+    font-size: 30px;
+    text-transform: uppercase;
+    font-weight: normal;
+    letter-spacing: 2px;
+    margin: 80px 0 20px;
+}
+
+.s2 h4 {
+    font-size: 16px;
+    color: #959595;
+    height: 20px;
+}
+
+.s2 p {
+    font-size: 15px;
+    color: #959595;
+    line-height: 20px;
+    margin: 40px 0 20px;
+}
+
+.s2 span {
+    font-size: 15px;
+    color: #959595;
+    line-height: 20px;
+}
+
+iframe {
+    width: 100%;
+}
+
+.s1 h2 {
+    text-transform: uppercase;
+    font-weight: normal;
+    font-size: 48px;
+    letter-spacing: 4px;
+    text-align: center;
+    margin: 0;
+    border: 1px solid black;
+    background: #000;
+    padding: 2px 40px;
+}
+
+.s1 .section-inner h2 {
+    text-align: left;
+    border: 1px solid black;
+    padding: 2px;
+}
+
+.s1 h4 {
+    text-transform: uppercase;
+    font-weight: normal;
+    font-size: 18px;
+    letter-spacing: 5px;
+    word-spacing: 10px;
+    text-align: center;
+    color: black;
+}
+
+.s1 .section-inner h4 {
+    text-align: left;
+}
+
+header .section-inner {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 90px;
+}
+
+.logo {
+    color: #2e2e2e;
+    font-size: 18px;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.menu a {
+    font-size: 18px;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    text-decoration: none;
+    margin: 0 20px;
+    color: #b7b7b7
+}
+
+.s2 .filters {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 60px;
+    font-size: 18px;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    border-top: 1px solid #f2f2f2;
+    border-bottom: 1px solid #f2f2f2;
+    margin: 34px 0 0;
+}
+
+.s2 .filters a {
+    text-decoration: none;
+    color: #777777;
+}
+
+.s2 .filters a:after {
+    content: '';
+    display: inline-block;
+    height: 30px;
+    border-right: 1px solid #f2f2f2;
+    margin: 0 15px;
+    vertical-align: middle;
+    transform: rotate(20deg);
+}
+
+.items {
+    display: flex;
+    justify-content: space-between;
+}
+
+.items > div {
+    display: inline-block;
+    vertical-align: top;
+    width: 360px;
+}
+
+.items img {
+    display: block;
+    margin: 50px 15px 20px;
+}
+
+.s2, .s3.about {
+    background: #fafafa;
+    padding-bottom: 30px;
+}
+
+.s2 .btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 160px;
+    height: 40px;
+    text-transform: uppercase;
+    background: #959595;
+    color: white;
+    font-size: 14px;
+    text-decoration: none;
+    margin: 30px auto;
+}
+
+.post {
+    width: 358px;
+}
+
+.post > div {
+    padding: 45px;
+    box-sizing: border-box;
+}
+
+.post div div {
+    display: flex;
+}
+
+.post .date {
+    margin-right: auto;
+}
+
+.s3.about h1 p {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.s3.about .section-inner .photo-wrapper {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 40px;
+}
+
+footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 300px;
+    line-height: 50px;
+    color: #959595;
+}
+
+footer .socials {
+    width: 100%;
+    text-align: center;
+    border-top: 1px solid #f8f8f8;
+    border-bottom: 1px solid #f8f8f8;
+}
+
+footer .socials a {
+    padding: 0 20px;
+    display: inline-block;
+    color: #a1a1a1;
+}
+
+footer .copy {
+    font-size: 13px;
+    text-transform: uppercase;
+}
+
+.s2.about .section-inner {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row-reverse;
+    padding: 70px 0;
+}
+
+.s2.about .section-inner > div {
+    width: 556px;
+}
+
+p:before {
+    content: '\201C';
+}
+
+p:after {
+    content: '\201D';
+}

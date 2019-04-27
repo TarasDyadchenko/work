@@ -1,0 +1,105 @@
+body {
+    font: 14px Tahoma;
+    color: #333333;
+    padding: 15px;
+    margin: 0 auto;
+    width: 1000px;
+    background: radial-gradient(ellipse at center, rgba(254, 255, 255, 1) 0%, rgba(221, 241, 249, 1) 35%, rgba(160, 216, 239, 1) 100%);
+}
+
+p {
+    text-indent: 30px;
+}
+
+#header {
+    box-shadow: -4px 26px 162px 66px rgba(229, 240, 14, 0.8);
+    text-align: center;
+    text-transform: capitalize;
+    padding: 40px 20px;
+    margin: 20px auto 10px auto;
+    width: 550px;
+    background: -webkit-linear-gradient(top, rgba(247, 20, 0, 1) 57%, rgba(203, 235, 255, 1) 100%, rgba(161, 219, 255, 1) 100%);
+    color: #ffffff;
+    border: 4px solid gold;
+}
+
+.new2 {
+    font-style: italic;
+}
+
+.new3 {
+    font-weight: bold;
+    text-decoration: line-through;
+}
+
+a {
+    text-decoration: none;
+    border-bottom: 1px dotted #C32017;
+    border-bottom: 1px dotted gold;
+}
+
+.new4 {
+    text-align: justify;
+}
+
+ul {
+    list-style-type: upper-roman;
+}
+
+.new6 {
+    color: green; /*зеленый 10 баллов*/
+}
+
+#liSuper {
+    color: blue; /*синий 100 баллов*/
+}
+
+#myList li.new6 {
+    color: brown; /*коричневый 111 баллов*/
+}
+
+iframe {
+    float: right;
+    margin: 20px;
+}
+
+img {
+    border-radius: 20px;
+    margin: 20px 50px;
+    float: right;
+    width: 500px;
+    -webkit-box-shadow: 25px -11px 79px 20px rgba(58, 28, 227, 1);
+
+}
+
+.cleaner {
+    width: 100%;
+    clear: both;
+}
+
+table, td, th {
+    border: solid #cccccc;
+    text-align: center;
+}
+
+table {
+    width: 700px;
+    border-collapse: collapse;
+    margin: 25px auto;
+
+    box-shadow: 22px 7px 53px 31px rgba(242, 14, 37, 0.71);
+}
+
+td, th {
+    height: 50px;
+    padding: 5px;
+    vertical-align: middle;
+}
+
+th {
+    background: -webkit-linear-gradient(top, rgba(242, 242, 2, 1) 68%, rgba(203, 235, 255, 1) 100%);
+}
+
+tr.blue td {
+    background: -webkit-linear-gradient(top, rgba(84, 163, 238, 1) 16%, rgba(84, 163, 238, 1) 31%, rgba(34, 55, 244, 1) 85%, rgba(30, 105, 222, 1) 99%);
+}
