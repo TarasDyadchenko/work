@@ -16,7 +16,7 @@
             // img5X = parseInt(img5.css('margin-left')),
             img5Y = parseInt(img5.css('bottom')),
             img6 = $('.s1 img:nth-of-type(6)'),
-            // img6X = parseInt(img6.css('margin-left')),
+            img6X = parseInt(img6.css('margin-left')),
             img6Y = parseInt(img6.css('bottom')),
             img7 = $('.s1 img:nth-of-type(7)'),
             img7X = parseInt(img7.css('margin-left')),
