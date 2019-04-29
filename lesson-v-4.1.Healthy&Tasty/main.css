@@ -111,7 +111,9 @@ header .logo {
     background: url("img/s2.bg.img1.jpg") center no-repeat;
     background-size: cover;
 }
-
+.s2 .section-inner {
+    overflow: hidden;
+}
 .s2 .info {
     display: block;
     width: 180px;
@@ -250,12 +252,44 @@ input[type=button]:hover {
     width: 220px;
     margin: 0 10px 50px;
     box-sizing: border-box;
+    position: relative;
 }
-
+.s5 .overlay {
+    position: absolute;
+    width: 220px;
+    height: 284px;
+    left: 0;
+    top: 0;
+    background: rgba(28,26,44,.5) url("img/eye.png") no-repeat top 100px center;
+    border-radius: 5px;
+    opacity: 0;
+    cursor: pointer;
+}
+.s5 .overlay:hover {
+    opacity: 1;
+}
+.s5 img {
+    border-radius: 5px;
+}
+.s5 .item > img {
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+.s5 .item > img.increased {
+    position: fixed;
+    left: 50%;
+    top: 50%;
+    margin: -142px 0 0 -100px;
+    z-index: 2;
+    transform: scale(1.6);
+    box-shadow: 0 0 15px 0 #000;
+    border: 1px solid #000;
+}
 .s5 .item span {
     display: block;
     font-size: 20px;
-    margin: 20px 0;
+    margin: 310px 0 20px;
     height: 48px;
     overflow: hidden;
     color: #96939a;
@@ -272,14 +306,22 @@ input[type=button]:hover {
     flex-wrap: wrap;
     justify-content: space-between;
 }
-
+.s5 .fixed-overlay {
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100vw;
+    height: 100vh;
+    background: rgba(28,26,44,.5);
+    z-index: 1;
+    display: none;
+}
 .s5 input[type=button] {
     margin: 50px auto 0;
     display: block;
 }
 
 .s6 {
-    height: 250px;
     background: url("img/s6.bg.jpg") center no-repeat;
     background-size: cover;
 }
@@ -287,6 +329,24 @@ input[type=button]:hover {
 .s6 .catalog {
     display: flex;
     justify-content: space-between;
+    align-items: center;
+    height: 210px;
+}
+
+.s6 .slick-arrow {
+    font-size: 0;
+    background: url("img/arrow.png") no-repeat center;
+    display: block;
+    min-width: 50px;
+    height: 100px;
+    border: none;
+    cursor: pointer;
+}
+
+.s6 .slick-prev {
+    transform: rotate(180deg);
+    position: relative;
+    left: -45px;
 }
 
 .s6 .thanks {

@@ -67,9 +67,21 @@
     });
 
     // Sliders
-    // $('.s1 .section-inner').slick({
-    //     dots: true,
-    //     fade: true
-    // });
+    $('.s6 .catalog').slick({
+        slidesToShow: 3
+    });
+
+    // zoom
+    var overlay = $('.fixed-overlay');
+    $('.overlay').on('click', function () {
+        $(this).prev().addClass('increased');
+        overlay.show();
+        $('body').css('overflow', 'hidden');
+    });
+    overlay.on('click', function () {
+        $(this).hide();
+        $('.increased').removeClass('increased');
+        $('body').css('overflow', 'auto');
+    });
 
 })(jQuery);
