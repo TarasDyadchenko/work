@@ -8,6 +8,12 @@ body {
     margin: 0 auto;
 }
 
+@media screen and (max-width: 1190px) {
+    .section-inner {
+        width: 1024px;
+    }
+}
+
 input {
     border: none;
 }
@@ -31,6 +37,40 @@ nav a {
     font-size: 16px;
     text-decoration: none;
     margin: 0 44px;
+}
+@media all and (max-width: 1190px){
+    nav a {
+        margin: 0 35px;
+    }
+}
+
+nav > div {
+    display: inline-block;
+    position: relative;
+}
+
+nav .level-2 {
+    position: absolute;
+    border-radius: 10px;
+    background: rgba(255, 255, 255, .9);
+    width: 100%;
+    padding-top: 15px;
+    overflow: hidden;
+    display: none;
+}
+
+nav > div:hover .level-2 {
+    display: block;
+}
+
+nav .level-2 a {
+    display: block;
+    margin: 0;
+    padding: 8px 55px;
+}
+
+nav .level-2 a:hover {
+    background: #85c4ff;
 }
 
 .s1 {
@@ -96,6 +136,7 @@ nav a {
     margin-left: 60px;
     letter-spacing: 2px;
 }
+
 .s1-a p {
     color: #2e77cc;
 }
@@ -114,7 +155,14 @@ nav a {
     flex-direction: column;
     margin-left: 50px;
 }
-
+@media all and (max-width: 1190px){
+    .s1-a form {width: 490px}
+}
+@media all and (max-width: 1024px){
+    .s1-a img {
+        display: none;
+    }
+}
 .s1-a input {
     width: 330px;
     height: 60px;
@@ -144,7 +192,7 @@ nav a {
 
 .s2 {
     text-align: center;
-    height: 966px;
+    min-height: 966px;
     background: url("img/s3-bg.png") no-repeat;
     background-size: cover;
     margin-bottom: 50px;
@@ -158,8 +206,9 @@ nav a {
     color: #2e77cc;
     letter-spacing: 6px;
 }
+
 .s2 p {
-   padding: 0;
+    padding: 0;
     margin-bottom: 60px;
 }
 
@@ -210,6 +259,7 @@ nav a {
     background: #bee1ff;
     margin: 0 15px;
 }
+
 .s2 .dots a:hover,
 .s2 .dots .active {
     width: 26px;
@@ -297,7 +347,7 @@ nav a {
     font-size: 34px;
     color: #2e77cc;
     line-height: 1.5;
-   letter-spacing: 10px;
+    letter-spacing: 10px;
 }
 
 .s4 .advantage {
@@ -327,13 +377,16 @@ nav a {
 .s5 .section-inner {
     height: 760px;
 }
+
 .s5 .section-inner > div {
     display: flex;
     justify-content: space-between;
 }
+
 .s5 .review {
     position: relative;
 }
+
 .s5 .review a {
     width: 84px;
     height: 84px;
@@ -374,6 +427,7 @@ nav a {
     background: #bee1ff;
     margin: 0 15px;
 }
+
 .s5 .dots a:hover,
 .s5 .dots .active {
     width: 26px;
@@ -440,16 +494,19 @@ footer .section-inner {
     background: black;
     color: white;
     padding: 20px;
+    box-sizing: border-box;
 }
 
 footer p {
     line-height: 1.5;
 }
+
 footer a {
     color: white;
     font-size: 16px;
     line-height: 2;
 }
+
 footer .section-inner > a {
     text-decoration: none;
 }
