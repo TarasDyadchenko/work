@@ -24,7 +24,7 @@
   </defs>
   <g id="arrowsvg">
     <g id="shape-2" style="fill: none; filter: url(#color-overlay-1);">
-      <path d="M9.970,23.260 C74.798,-28.538 121.343,26.322 121.343,26.322 " id="path-1" class="cls-3" style="stroke: inherit; filter: none; fill: inherit;" fill-rule="evenodd"/>
+      <path d="M9.970,23.260 C74.798,-28.538 121.343,26.322 121.343,26.322 " id="path-1" class="cls-3" fill-rule="evenodd"/>
     </g>
     <use xlink:href="#path-1" style="stroke: #9aca40; fill: none; filter: none;"/>
     <path d="M-0.003,28.530 C-0.003,28.530 10.670,28.727 10.670,28.727 C10.670,28.727 2.711,18.211 2.711,18.211 C2.711,18.211 -0.003,28.530 -0.003,28.530 " id="path-2" class="cls-4" fill-rule="evenodd"/>

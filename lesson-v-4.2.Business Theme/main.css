@@ -2,9 +2,11 @@ body {
     margin: 0;
     font-family: Arial, sans-serif;
 }
+
 .db {
     display: block;
 }
+
 .section-inner {
     width: 1170px;
     margin: 0 auto;
@@ -16,6 +18,7 @@ header .section-inner {
     display: flex;
     align-items: center;
     justify-content: space-between;
+    padding: 0;
 }
 
 header img {
@@ -23,20 +26,31 @@ header img {
 }
 
 header a {
+
     text-decoration: none;
     font-size: 14px;
     color: #adadad;
     text-transform: uppercase;
+    padding: 10px;
+}
 
+header .c :hover {
+    background: #ffc155;
+    color: white;
 }
 
 .s1 {
     background: #709dca;
+    margin-bottom: 150px;
+}
+
+.s1 .section-inner {
+    text-align: center;
 }
 
 .s1 h1 {
+    font-weight: normal;
     margin: 0;
-    text-align: center;
     font-size: 35px;
     color: white;
     padding: 50px 0 0;
@@ -44,8 +58,7 @@ header a {
 }
 
 .s1 p {
-    text-align: center;
-    font-size: 12px;
+    font-size: 18px;
     color: white;
     margin: 0 0 30px;
 }
@@ -55,8 +68,18 @@ header a {
     height: 50px;
 }
 
+.s1 .fas {
+    position: absolute;
+    margin-left: 12px;
+    margin-top: 48px;
+}
+.s1 .btn {
+    height: 52px;
+    line-height: 52px;
+}
+
 .s1 img {
-    margin: 30px 250px;
+    margin: 30px 0 -70px;
 }
 
 .s2 h2 {
@@ -69,24 +92,35 @@ header a {
 
 .s2 h4 {
     text-align: center;
-    font-size: 16px;
+    font-size: 18px;
     color: #adadad;
     margin: 0 0 30px 0;
 }
 
 .s2 h5 {
-    font-size: 20px;
+    font-size: 16px;
+    color: #869298;
+    text-transform: uppercase;
+}
+
+.s2 p {
+    color: #869298;
+    font-size: 13px;
+    line-height: 20px;
 }
 
 .s2 .context {
-    width: 500px;
+    width: 460px;
     height: 200px;
     position: relative;
+    margin: 0 auto;
 }
+
 .s2 .context i {
     position: absolute;
-    top: 27px;
-    left: -50px;
+    top: 30px;
+    left: -60px;
+    font-size: 40px;
 }
 
 .s2 .list-context {
@@ -109,6 +143,7 @@ header a {
     display: block;
     clear: both;
 }
+
 .s3 .write-ap {
     width: 450px;
     height: 300px;
@@ -129,16 +164,26 @@ header a {
 .s3 h2 {
     text-transform: uppercase;
     font-weight: bold;
+    color: white;
 }
 
 .s3 p {
     font-size: 14px;
+    color: white;
+    line-height: 25px;
+}
 
+.s3 a {
+    border: 1px solid brown;
+    width: 200px;
+    height: 50px;
+    line-height: 50px;
 }
 
 .s4 {
     background: #e7edf3;
 }
+
 .s4 h2 {
     margin: 0;
     padding: 80px 0 0 0;
@@ -150,19 +195,36 @@ header a {
 }
 
 .s4 h4 {
+    margin: 10px 0 50px 0;
     text-align: center;
-    font-size: 13px;
+    font-size: 18px;
+    color: #869298;
 }
+
 .s4 .price h3 {
     font-size: 25px;
+    color: #394b50;
+}
+
+.s4 h6 {
+    font-size: 14px;
+    margin: 0 0 10px 0;
+    color: #adadad;
+}
+
+.s4 .premium-plan h6 {
+    color: white;
+}
+
+.s4 .price .e {
+    font-size: 60px;
+    color: #ffc155;
 }
 
 .s4 .price {
-    display: flex;
-    flex-direction: column;
     text-align: center;
     width: 390px;
-    height: 350px;
+    height: 450px;
     padding: 18px;
     box-sizing: border-box;
     align-items: center;
@@ -172,11 +234,18 @@ header a {
 
 .s4 .price.premium-plan {
     background: #7777cc;
-    height: 400px;
+    height: 500px;
+}
+
+.s4 .price.premium-plan h3 {
     color: white;
 }
 
-.s4 .price span{
+.s4 .price.premium-plan span {
+    color: white;
+}
+
+.s4 .price span {
     display: block;
     border-top: 1px solid #ddd;
     padding: 10px 0;
@@ -185,8 +254,16 @@ header a {
     color: #adadad;
 }
 
+.s4 a {
+    border: 1px solid #ffc155;
+    width: 200px;
+    height: 50px;
+    line-height: 50px;
+}
 
-
+.s4 .premium-plan .btn {
+    margin-top: 54px;
+}
 
 .s4 .catalog-price {
     display: flex;
@@ -195,19 +272,24 @@ header a {
     align-items: center;
 }
 
+.s5 .section-inner {
+    padding-bottom: 70px;
+}
+
 .s5 h2 {
     margin: 80px 0 0 0;
     text-align: center;
     font-size: 30px;
     text-transform: uppercase;
     font-weight: bold;
+    color: #acacac;
 }
 
 .s5 h5 {
     margin: 10px 0 50px 0;
     text-align: center;
-    font-size: 13px;
-    text-transform: uppercase;
+    font-size: 18px;
+    color: #acacac;
 }
 
 .s5 h6 {
@@ -219,12 +301,13 @@ header a {
 .s5 p {
     font-size: 13px;
     color: #acacac;
+    line-height: 20px;
 }
 
 .s5 .step {
     text-align: center;
     width: 240px;
-    height: 320px;
+    height: 280px;
 }
 
 .s5 .works {
@@ -232,43 +315,76 @@ header a {
     flex-wrap: wrap;
     justify-content: space-between;
 }
-
-.s5 input {
+.works > img {
+    margin-left: -64px;
+    margin-top: -350px;
+    margin-right: -64px;
+}
+.works > img:nth-of-type(2) {
+    transform: rotate(180deg);
+    margin-top: -100px;
+}
+.s5 .btn {
     display: block;
-    margin: 0 auto;
 }
 
+.btn {
+    display: inline-block;
+    line-height: 40px;
+    text-align: center;
+    width: 160px;
+    text-transform: uppercase;
+    background: #ffc155;
+    color: white;
+    font-size: 14px;
+    text-decoration: none;
+    margin: 30px auto;
+}
+.btn:hover {
+    background: #cb9845;
+}
 .s6 h2 {
+    margin: 0;
+    padding-top: 80px;
     text-align: center;
     font-size: 30px;
     text-transform: uppercase;
     font-weight: bold;
+    color: white;
 }
 
 .s6 h5 {
     text-align: center;
-    font-size: 13px;
+    font-size: 18px;
+    color: white;
+    margin: 10px 0 50px;
 }
+
 .s6 {
     background: #ffc155;
 }
 
-.s6 span {
+.s6 .client h4 {
     font-size: 14px;
     text-transform: uppercase;
     color: #acacac;
 }
 
+.s6 .e {
+    color: #ffc155;
+}
+
 .s6 p {
-    font-size: 14px;
+    font-size: 13px;
     color: #acacac;
+    line-height: 16px;
 }
 
 .s6 .client {
-  padding: 28px;
+    padding: 30px;
     margin-bottom: 20px;
     width: 500px;
-    height: 250px;
+    height: 160px;
     background: white;
 }
 
@@ -276,11 +392,12 @@ header a {
     float: left;
     margin-right: 20px;
 }
+
 .s6 .happy {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
-     margin: 50px 0 0 0;
+    padding-bottom: 50px;
 }
 
 .s7 {
@@ -288,6 +405,7 @@ header a {
 }
 
 .s7 h2 {
+    color: #394b50;
     text-align: center;
     font-size: 30px;
     text-transform: uppercase;
@@ -296,10 +414,14 @@ header a {
 }
 
 .s7 h5 {
+    color: #394b50;
     text-align: center;
+    font-size: 18px;
 }
 
 .s7 h4 {
+    margin: 50px 0 10px;
+    color: white;
     text-align: center;
 }
 
@@ -319,6 +441,7 @@ header a {
     border-radius: 50%;
     position: relative;
 }
+
 .s7 .contact:before {
     content: '';
     position: absolute;
@@ -330,14 +453,31 @@ header a {
     transform: scaleX(0.7);
 }
 
-.s7 .btn {
+.s7 form {
     text-align: center;
-    margin: 30px 0 50px;
+}
+
+.s7 .btn {
+    cursor: pointer;
+    border: none;
+    height: 54px;
+    line-height: 54px;
+}
+
+.s7 input {
+    border: 1px solid #394b50;
+}
+
+
+.s7 .section-inner .e {
+    color: #ffc155;
 }
 
 .s7 .contact a {
+    font-size: 13px;
     color: white;
     text-decoration: none;
+    line-height: 20px;
 }
 
 .s7 img {
@@ -355,6 +495,25 @@ footer .section-inner {
 
 footer .socials {
     margin: 20px 0 30px;
+    font-size: 20px;
+}
+
+footer .socials a {
+    padding: 0 10px;
+    text-decoration: none;
+    color: #6196d2;
+}
+footer .fa-phone {
+    transform: rotate(90deg);
+}
+
+footer .socials i:hover {
+    color: #c97839;
+}
+
+footer .db {
+    font-size: 22px;
+    color: #394b50;
 }
 
 .fa-clock {
@@ -372,15 +531,45 @@ footer .socials {
     color: #6196d2;
 }
 
-.fa-headphones {
+.fa-cog {
     font-size: 36px;
     color: #6196d2;
 }
 
+.fa-rocket {
+    font-size: 36px;
+    color: #6196d2
+}
+
+.fa-dollar-sign {
+    font-size: 36px;
+    color: #6196d2
+}
+
+.fa-headphones {
+    font-size: 60px;
+    color: #6196d2;
+}
+
+.fa-lock-open {
+    font-size: 60px;
+    color: #6196d2;
+}
+
+.fa-cloud {
+    font-size: 60px;
+    color: #6196d2;
+}
+
+.fa-thumbs-up {
+    font-size: 60px;
+    color: #6196d2;
+}
+
 input {
+    padding-left: 40px;
     width: 250px;
     height: 50px;
-    border-radius: 25px;
     font-size: 16px;
     border: none;
 }
@@ -388,12 +577,18 @@ input {
 footer p {
     text-align: center;
     border: 1px solid;
-    background: blue;
+    background: #709dca;
     color: white;
     padding: 20px;
 }
 
 footer nav > a {
+    text-decoration: none;
     margin: 0 10px 10px;
     display: inline-block;
+    color: #394b50;
+}
+
+footer .db {
+    color: #394b50;
 }
