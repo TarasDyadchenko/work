@@ -11,6 +11,18 @@ body {
     width: 1170px;
     margin: 0 auto;
     padding: 0 20px;
+    box-sizing: border-box;
+}
+
+@media all and (max-width: 1170px) {
+    .section-inner {
+        width: 1024px;
+    }
+}
+@media all and (max-width: 1024px) {
+    .section-inner {
+        width: 100%;
+    }
 }
 
 header .section-inner {
@@ -21,8 +33,14 @@ header .section-inner {
     padding: 0;
 }
 
-header img {
-    margin: 0 200px 0 0;
+@media all and (max-width: 1170px) {
+    header img {
+        margin-left: 20px;
+    }
+
+    header .c {
+        margin-right: 20px;
+    }
 }
 
 header a {
@@ -64,15 +82,23 @@ header .c :hover {
 }
 
 .s1 input {
-    width: 280px;
+    width: 250px;
     height: 50px;
+}
+
+@media all and (max-width: 1170px) {
+    .s1 input {
+        width: 200px;
+    }
 }
 
 .s1 .fas {
     position: absolute;
     margin-left: 12px;
     margin-top: 48px;
+    color: #adadad;
 }
+
 .s1 .btn {
     height: 52px;
     line-height: 52px;
@@ -114,6 +140,17 @@ header .c :hover {
     height: 200px;
     position: relative;
     margin: 0 auto;
+}
+
+@media all and (max-width: 1170px) {
+    .s2 .context {
+        width: 350px;
+    }
+}
+@media all and (max-width: 930px) {
+    .s2 .context {
+        width: 36%;
+    }
 }
 
 .s2 .context i {
@@ -221,15 +258,35 @@ header .c :hover {
     color: #ffc155;
 }
 
+.s4 .price sup {
+    font-size: 30px;
+}
+
 .s4 .price {
     text-align: center;
-    width: 390px;
+    width: 370px;
     height: 450px;
     padding: 18px;
     box-sizing: border-box;
     align-items: center;
     background: #ffffff;
     margin-bottom: 100px;
+}
+
+@media all and (max-width: 1170px) {
+    .s4 .price {
+        width: 300px;
+    }
+}
+@media all and (max-width: 980px) {
+    .s4 .price {
+        width: 32%;
+    }
+}
+@media all and (max-width: 780px) {
+    .s4 .price {
+        width: 100%;
+    }
 }
 
 .s4 .price.premium-plan {
@@ -286,7 +343,7 @@ header .c :hover {
 }
 
 .s5 h5 {
-    margin: 10px 0 50px 0;
+    margin: 10px 0 90px 0;
     text-align: center;
     font-size: 18px;
     color: #acacac;
@@ -310,20 +367,51 @@ header .c :hover {
     height: 280px;
 }
 
+@media all and (max-width: 1170px) {
+    .s5 .step {
+        width: 200px;
+    }
+}
+@media all and (max-width: 930px) {
+    .s5 .step {
+        width: 46%;
+    }
+}
+
+@media all and (max-width: 1170px) {
+
+}
+
+
+@media all and (max-width: 768px) {
+}
+
+.s6 .client {
+    width: 410px;
+}
+
 .s5 .works {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
 }
+
 .works > img {
     margin-left: -64px;
-    margin-top: -350px;
+    margin-top: -280px;
     margin-right: -64px;
 }
+@media all and (max-width: 930px) {
+    .works > img {
+        display: none;
+    }
+}
+
 .works > img:nth-of-type(2) {
     transform: rotate(180deg);
-    margin-top: -100px;
+    margin-top: -160px;
 }
+
 .s5 .btn {
     display: block;
 }
@@ -340,9 +428,11 @@ header .c :hover {
     text-decoration: none;
     margin: 30px auto;
 }
+
 .btn:hover {
     background: #cb9845;
 }
+
 .s6 h2 {
     margin: 0;
     padding-top: 80px;
@@ -383,14 +473,29 @@ header .c :hover {
 .s6 .client {
     padding: 30px;
     margin-bottom: 20px;
-    width: 500px;
+    width: 480px;
     height: 160px;
     background: white;
+}
+@media all and (max-width: 1170px) {
+    .s6 .client {
+        width: 420px;
+    }
+}
+@media all and (max-width: 1024px) {
+    .s6 .client {
+        width: calc(50% - 70px);
+    }
+}
+@media all and (max-width: 930px) {
+    .s6 .client {
+        width: 100%;
+    }
 }
 
 .s6 .client img {
     float: left;
-    margin-right: 20px;
+    margin: 10px 20px 30px 0;
 }
 
 .s6 .happy {
@@ -468,6 +573,12 @@ header .c :hover {
     border: 1px solid #394b50;
 }
 
+.s7 .fas {
+    position: absolute;
+    margin-left: 12px;
+    margin-top: 50px;
+    color: #adadad;
+}
 
 .s7 .section-inner .e {
     color: #ffc155;
@@ -503,6 +614,7 @@ footer .socials a {
     text-decoration: none;
     color: #6196d2;
 }
+
 footer .fa-phone {
     transform: rotate(90deg);
 }
@@ -567,7 +679,7 @@ footer .db {
 }
 
 input {
-    padding-left: 40px;
+    padding-left: 35px;
     width: 250px;
     height: 50px;
     font-size: 16px;
@@ -586,9 +698,9 @@ footer nav > a {
     text-decoration: none;
     margin: 0 10px 10px;
     display: inline-block;
-    color: #394b50;
+    color: #b3babc;
 }
 
 footer .db {
-    color: #394b50;
+    color: #b3babc;
 }
