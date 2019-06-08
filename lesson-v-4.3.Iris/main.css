@@ -7,7 +7,16 @@ body {
     border: 1px dashed #E7BC6C;
     margin: 7px;
 }
-
+i[class^=fa]{
+    display: inline-block;
+    width: 50px;
+    height: 50px;
+    border: 1px dashed #E7BC6C;
+    border-radius: 50%;
+    background: #ffffff;
+    text-align: center;
+    line-height: 50px;
+}
 .section-inner {
     width: 1170px;
     margin: 0 auto;
@@ -32,23 +41,27 @@ header a {
     color: black;
     text-decoration: none;
 }
+
 header .logo-wrapper {
     background: #ffffff;
     width: 286px;
     height: 286px;
     border-radius: 50%;
-    margin-top: -50px;
+    margin-top: -20px;
     box-sizing: border-box;
 }
+
 header .logo-wrapper .border {
     border-radius: 50%;
     height: calc(100% - 14px);
     box-sizing: border-box;
 }
-header .logo-wrapper  img {
+
+header .logo-wrapper img {
     margin: 140px auto 0;
     display: block;
 }
+
 .s1 {
     background: url("img/s1.bg.jpg") center no-repeat;
     height: 780px;
@@ -83,12 +96,14 @@ header .logo-wrapper  img {
     text-align: center;
     padding: 150px 0 90px;
 }
+
 .s1 .play-wrapper {
     margin: 0 auto;
     display: flex;
     justify-content: center;
     align-items: center;
 }
+
 .s1 .play-wrapper:before,
 .s1 .play-wrapper:after {
     content: '';
@@ -96,6 +111,7 @@ header .logo-wrapper  img {
     width: 150px;
     height: 2px;
 }
+
 .s1 .play {
     display: block;
     background: white;
@@ -114,6 +130,7 @@ header .logo-wrapper  img {
     border-radius: 50%;
     box-sizing: border-box;
 }
+
 form {
     border: 1px solid white;
     background: white;
@@ -126,16 +143,21 @@ form .border {
     align-items: center;
     padding-left: 55px;
 }
+
 form .border > div:first-child * {
     text-align: left;
 }
+
 .border h3 {
+    font-weight: normal;
     color: black;
     font-size: 36px;
+    margin: 50px 0 20px;
 }
 
 form p {
     font-size: 18px;
+    margin: 0 0 50px;
 }
 
 form a {
@@ -231,6 +253,9 @@ form input {
     margin: 18px auto 0;
     border-radius: 25px;
 }
+.btn:hover {
+    background: #105405;
+}
 
 .s3 h2 {
     margin: 100px 0 80px;
@@ -263,7 +288,6 @@ form input {
     text-decoration: none;
     color: #ffc155;
 }
-
 
 .s3 p {
     font-size: 16px;
@@ -298,9 +322,9 @@ form input {
     justify-content: space-between;
     width: 320px;
     border: 1px solid white;
-
     background: white;
 }
+
 .s5 .border {
     text-align: left;
     padding-left: 15px;
@@ -310,13 +334,14 @@ form input {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
-    width: 67%;
+    width: 70%;
 }
 
 .s5 .working div > {
+    display: flex;
     box-sizing: border-box;
-    width: 350px;
-    height: 50px;
+    width: 340px;
+    height: 100px;
 }
 
 .s5 h2 {
@@ -339,11 +364,19 @@ form input {
     color: #979797;
 }
 
+.s5 .price-b img {
+    position: relative;
+    top: 20px;
+    left: -10px;
+}
 
+.s5 .price-b span {
+    display: inline-flex;
+    width: 320px;
+    margin: 0 0 50px;
+}
 
-
-
-.s5 p {
+.s5 span {
     font-size: 16px;
 }
 
@@ -377,18 +410,21 @@ form input {
 }
 
 .s7 .plan .border,
-.s7 .plan-c .border{
+.s7 .plan-c .border {
     box-sizing: border-box;
     height: calc(100% - 14px);
     background: #f6f5f2;
     padding: 24px;
 }
+
 .s7 .plan .border {
     border: 1px solid #ddf1d4;
 }
+
 .s7 .plan-c .border {
     border: 1px solid #f3ebde;
 }
+
 .s7 .wedding {
     display: flex;
     justify-content: space-between;
@@ -402,12 +438,33 @@ form input {
     font-size: 18px;
     text-align: left;
     margin-left: 50px;
+    position: relative;
 }
-
+.s7 p:before, .s7 p:after {
+    position: absolute;
+    content: '';
+    left: -20px;
+    top: 7px;
+}
+.s7 p:before {
+    width: 6px;
+    height: 6px;
+    background: green;
+    border-radius: 50%;
+}
+.s7 p:after {
+    height: calc(100% + 12px);
+    border-left: 1px dashed green;
+    margin: 5px 0 0 2px;
+}
+.s7 p:last-child:after {
+    display: none;
+}
 .s7 h5 {
     text-align: center;
     font-size: 20px;
     color: #5ead3c;
+    text-decoration: underline;
 }
 
 .s8 {
@@ -435,9 +492,11 @@ form input {
     width: 320px;
     height: 100%;
     text-align: left;
+}
+.s8 .context .border {
+    display: block;
     padding-left: 60px;
 }
-
 
 
 .s8 h3 {
@@ -472,9 +531,11 @@ form input {
     font-size: 40px;
     font-weight: normal;
 }
-
 .s10 .section-inner {
     text-align: center;
+}
+.s10 img {
+    margin-top: -70px;
 }
 
 .s10 h4 {
@@ -494,6 +555,9 @@ form input {
 .s10 a {
     font-size: 20px;
     color: #ffc155;
+    display: inline-block;
+    margin-bottom: -25px;
+    vertical-align: bottom;
 }
 
 
@@ -508,6 +572,18 @@ form input {
     font-weight: normal;
 }
 
+.s11 h4 {
+    font-size: 30px;
+    text-align: right;
+    width: 400px;
+}
+
+.s11 p {
+    font-size: 16px;
+    text-align: left;
+    width: 400px;
+}
+
 .s11 .section-inner {
     padding: 1px;
     text-align: center;
@@ -518,9 +594,28 @@ form input {
 }
 
 .s11 .payment {
-    display: block;
+    text-align: center;
+    margin: 0 auto;
 }
 
+.s11 .payment {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 0 40px 0;
+    position: relative;
+}
+.s11 .payment:after {
+    content: '';
+    position: absolute;
+    left: 50%;
+    top: 90%;
+    border-left: 1px dashed #E7BC6C;
+    height: 50%;
+}
+.s11 .payment:last-child:after {
+    display: none;
+}
 .s12 h2 {
     margin: 100px 0 80px;
     text-align: center;
@@ -590,6 +685,11 @@ form input {
     line-height: 2;
 }
 
+.s13 i {
+    font-size: 20px;
+    color: #ffc155;
+}
+
 .s14 {
     padding: 1px;
     background: #f6f5f2;
@@ -633,4 +733,9 @@ footer a {
     font-size: 24px;
     text-decoration: none;
     color: black;
+}
+
+footer i {
+    font-size: 20px;
+    color: #ffc155;
 }
