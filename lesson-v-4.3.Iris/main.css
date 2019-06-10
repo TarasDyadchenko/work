@@ -7,7 +7,8 @@ body {
     border: 1px dashed #E7BC6C;
     margin: 7px;
 }
-i[class^=fa]{
+
+.socials i {
     display: inline-block;
     width: 50px;
     height: 50px;
@@ -17,6 +18,7 @@ i[class^=fa]{
     text-align: center;
     line-height: 50px;
 }
+
 .section-inner {
     width: 1170px;
     margin: 0 auto;
@@ -253,6 +255,7 @@ form input {
     margin: 18px auto 0;
     border-radius: 25px;
 }
+
 .btn:hover {
     background: #105405;
 }
@@ -397,6 +400,27 @@ form input {
     font-weight: normal;
 }
 
+.s7 .border-i {
+    margin-top: -90px;
+    background: #ffffff;
+    display: inline-block;
+    vertical-align: top;
+    border-radius: 50%;
+}
+.s7 .border-i div {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    border: 1px dashed green;
+    margin: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.s7 .border-orange div {
+    border-color: orange;
+}
+
 .s7 .plan {
     width: 46%;
     text-align: center;
@@ -440,26 +464,31 @@ form input {
     margin-left: 50px;
     position: relative;
 }
+
 .s7 p:before, .s7 p:after {
     position: absolute;
     content: '';
     left: -20px;
     top: 7px;
 }
+
 .s7 p:before {
     width: 6px;
     height: 6px;
     background: green;
     border-radius: 50%;
 }
+
 .s7 p:after {
     height: calc(100% + 12px);
     border-left: 1px dashed green;
     margin: 5px 0 0 2px;
 }
+
 .s7 p:last-child:after {
     display: none;
 }
+
 .s7 h5 {
     text-align: center;
     font-size: 20px;
@@ -493,11 +522,11 @@ form input {
     height: 100%;
     text-align: left;
 }
+
 .s8 .context .border {
     display: block;
     padding-left: 60px;
 }
-
 
 .s8 h3 {
     font-size: 48px;
@@ -531,9 +560,11 @@ form input {
     font-size: 40px;
     font-weight: normal;
 }
+
 .s10 .section-inner {
     text-align: center;
 }
+
 .s10 img {
     margin-top: -70px;
 }
@@ -552,14 +583,13 @@ form input {
     width: 700px;
 }
 
-.s10 a {
+.s10 .socials {
     font-size: 20px;
     color: #ffc155;
     display: inline-block;
     margin-bottom: -25px;
     vertical-align: bottom;
 }
-
 
 .s11 {
     background: #f6f5f2;
@@ -593,6 +623,10 @@ form input {
     text-align: center;
 }
 
+.s11 img {
+    margin: 0 25px 0 25px;
+}
+
 .s11 .payment {
     text-align: center;
     margin: 0 auto;
@@ -605,6 +639,7 @@ form input {
     margin: 0 0 40px 0;
     position: relative;
 }
+
 .s11 .payment:after {
     content: '';
     position: absolute;
@@ -613,9 +648,11 @@ form input {
     border-left: 1px dashed #E7BC6C;
     height: 50%;
 }
+
 .s11 .payment:last-child:after {
     display: none;
 }
+
 .s12 h2 {
     margin: 100px 0 80px;
     text-align: center;
@@ -640,7 +677,6 @@ form input {
 .s12 .e {
     color: #5ead3c;
 }
-
 
 .s12 .btn {
     text-align: center;
@@ -738,4 +774,61 @@ footer a {
 footer i {
     font-size: 20px;
     color: #ffc155;
+}
+
+.blog-s1 {
+    background: url("img/blog.img.bg.jpg") center no-repeat;
+    height: 365px;
+}
+
+.blog-s1 h1 {
+    margin: 0;
+    padding: 140px 0 0 0;
+    text-align: center;
+    color: white;
+    font-size: 48px;
+    font-weight: normal;
+}
+
+.blog .c {
+    word-spacing: 30px;
+    color: #aeaeae
+}
+
+.blog-s1 h2 {
+    text-align: center;
+    color: white;
+    font-size: 30px;
+    font-weight: normal;
+}
+
+.blog h3 {
+    text-align: center;
+    font-size: 24px;
+    margin: 70px;
+}
+
+.blog .collage {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.blog .photo {
+    max-width: 370px;
+}
+.blog .photo img {
+    padding: 0 0 10% 0;
+}
+
+.blog .photo p {
+    text-align: center;
+    font-size: 18px;
+}
+
+.blog h4 {
+    text-align: center;
+    font-size: 20px;
+    margin: 50px 0 100px 0;
+    color: #5ead3c;
 }
