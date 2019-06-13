@@ -839,14 +839,16 @@ footer i {
     padding: 0;
 }
 
-.photo .e {
-    color: #5ead3c;
-}
-
-.blog .photo p {
+.blog .photo a {
     text-align: center;
     font-size: 18px;
     margin: 10px 0 40px;
+    display: block;
+    color: #000000;
+    text-decoration: none;
+}
+.blog .photo a:hover {
+    color: #5ead3c;
 }
 
 .blog h4 {
