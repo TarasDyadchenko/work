@@ -847,6 +847,7 @@ footer i {
     color: #000000;
     text-decoration: none;
 }
+
 .blog .photo a:hover {
     color: #5ead3c;
 }
@@ -881,7 +882,7 @@ footer i {
 }
 
 .case p {
-    margin: 50px;
+    margin: 50px 200px;
     line-height: 20px;
     font-size: 16px;
     color: #828282;
@@ -891,9 +892,10 @@ footer i {
     font-weight: bold;
     color: #575757;
 }
+
 .case h4 {
     font-size: 16px;
-    margin: 50px 40px 80px;
+    margin: 50px 200px 80px;
     color: #828282;
 }
 
@@ -940,5 +942,41 @@ footer i {
 .case-s2 {
     background: #f9f9f8;
     padding: 1px 0 0;
+}
+
+.article-s1 {
+    background: url("img/img.article.bg.jpg") center no-repeat;
+    height: 370px;
+}
+
+.article-s1 h1 {
+    margin: 0;
+    padding: 140px 0 0 0;
+    text-align: center;
+    color: white;
+    font-size: 48px;
+    font-weight: normal;
+}
+
+.article-s1 h2 {
+    text-align: center;
+    color: white;
+    font-size: 30px;
+    font-weight: normal;
+    margin-bottom: 60px;
+}
+
+.article h3 {
+    color: #5ead3c;
+    font-size: 24px;
+    margin: 20px 200px 40px;
+}
+
+.article p {
+    font-size: 16px;
+    color: #232323;
+    margin: 20px 200px 40px;
+    line-height: 30px;
+    font-weight: bold;
 }
 
