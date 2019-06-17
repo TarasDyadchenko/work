@@ -185,6 +185,9 @@ form input {
 .s2 {
     background: #f6f5f2;
     padding: 1px 0 0;
+
+    height: 100%;
+
 }
 
 .s2 h2 {
@@ -260,6 +263,10 @@ form input {
     background: #105405;
 }
 
+.s3 {
+    height: 100%;
+}
+
 .s3 h2 {
     margin: 100px 0 80px;
     text-align: center;
@@ -310,6 +317,8 @@ form input {
 .s5 {
     padding: 1px;
     background: #f6f5f2;
+
+    height: 100%;
 }
 
 .s5 .price {
@@ -980,3 +989,28 @@ footer i {
     font-weight: bold;
 }
 
+.article .w {
+    float: right;
+    height: 50%;
+    width: 50%;
+}
+
+
+@media all and (max-width: 1170px) {
+    .section-inner {
+        width: 1024px;
+    }
+}
+
+@media all and (max-width: 1024px) {
+    .section-inner {
+        width: 100%;
+        height: 100%;
+    }
+}
+
+@media all and (max-width: 768px) {
+    form {
+        display: none;
+    }
+}
