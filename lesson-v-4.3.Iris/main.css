@@ -8,6 +8,12 @@ body {
     margin: 7px;
 }
 
+@media all and (max-width: 800px) {
+    .border {
+        display: none;
+    }
+}
+
 .socials i {
     display: inline-block;
     width: 50px;
@@ -42,6 +48,24 @@ header a {
     font-size: 16px;
     color: #989896;
     text-decoration: none;
+}
+
+@media all and (max-width: 800px) {
+    header .logo-wrapper {
+        display: none;
+    }
+}
+
+@media all and (max-width: 800px) {
+    form {
+        display: none;
+    }
+}
+
+@media all and (max-width: 500px) {
+    header a {
+        display: none;
+    }
 }
 
 header .logo-wrapper {
@@ -140,22 +164,40 @@ form {
     text-align: center;
 }
 
+@media all and (max-width: 800px) {
+    form {
+        display: none;
+    }
+}
+
 form .border {
     display: flex;
     align-items: center;
     padding-left: 55px;
 }
-@media all and (max-width: 768px) {
+
+@media all and (max-width: 800px) {
     form .border {
-        display: block;
+        display: none;
     }
 }
+
 form .border > div:last-child {
     margin: 10px;
 }
-form .border > div:first-child {
-    margin-right: 10px;
+
+@media all and (max-width: 500px) {
+    form .border > div:last-child {
+        display: block;
+        margin: 0;
+        padding: 0;
+    }
 }
+
+form .border > div:first-child {
+    margin: 0 10px;
+}
+
 form .border > div:first-child * {
     text-align: left;
 }
@@ -180,6 +222,7 @@ form a {
     margin: 20px 60px 20px;
     display: inline-block;
 }
+
 @media all and (max-width: 1170px) {
     .s1 form {
         margin: -60px auto 20px;
@@ -189,6 +232,7 @@ form a {
         width: calc(100% - 30px);
     }
 }
+
 form input {
     font-size: 16px;
     padding-left: 30px;
@@ -202,16 +246,25 @@ form input {
 .s2 {
     background: #f6f5f2;
     padding: 1px 0 0;
+}
 
-    height: 100%;
-
+@media all and (max-width: 810px) {
+    .s2 h2 {
+        margin: 10px;
+    }
 }
 
 .s2 h2 {
-    margin: 150px 0 80px;
+    margin: 150px 20px 80px;
     text-align: center;
     font-size: 40px;
     font-weight: normal;
+}
+
+@media all and (max-width: 810px) {
+    .s2 h2 {
+        margin: 130px 0 20px;
+    }
 }
 
 .s2 .collage {
@@ -241,6 +294,12 @@ form input {
     position: relative;
     margin: -100px auto 50px;
     padding: 1px 0;
+}
+
+@media all and (max-width: 480px) {
+    .s2 .context {
+        margin: 0;
+    }
 }
 
 .s2 .context h3 {
@@ -285,7 +344,7 @@ form input {
 }
 
 .s3 h2 {
-    margin: 100px 0 80px;
+    margin: 100px 20px 80px;
     text-align: center;
     font-size: 40px;
     font-weight: normal;
@@ -294,22 +353,23 @@ form input {
 .s3 .context {
     width: 700px;
     float: right;
+    margin-right: 50px;
 }
-/*@media all and (max-width: 1170px) {
-    .s3 .context {
-        width: 600px;
-    }
-}
+
 @media all and (max-width: 1024px) {
     .s3 .context {
         width: 380px;
-    }
-}*/
-@media all and (max-width: 1170px) {
-    .s3 .context {
-        width: calc(100% - 350px);
+        padding-right: 10px;
     }
 }
+
+@media all and (max-width: 800px) {
+    .s3 .context {
+        float: none;
+        padding: 10px;
+    }
+}
+
 .s3 h3 {
     font-size: 40px;
 }
@@ -348,7 +408,6 @@ form input {
 .s5 {
     padding: 1px;
     background: #f6f5f2;
-
     height: 100%;
 }
 
@@ -413,10 +472,23 @@ form input {
     left: -10px;
 }
 
+@media all and (max-width: 800px) {
+    .s5 .price-b img {
+        display: none;
+    }
+}
+
 .s5 .price-b span {
     display: inline-flex;
     width: 320px;
     margin: 0 0 50px;
+}
+
+@media all and (max-width: 800px) {
+    .s5 .price-b span {
+        display: block;
+        margin-right: 20px;
+    }
 }
 
 .s5 span {
@@ -475,6 +547,12 @@ form input {
     background: #f0eee8;
 }
 
+@media all and (max-width: 800px) {
+    .plan-c {
+        float: right;
+    }
+}
+
 .s7 .plan .border,
 .s7 .plan-c .border {
     box-sizing: border-box;
@@ -494,6 +572,12 @@ form input {
 .s7 .wedding {
     display: flex;
     justify-content: space-between;
+}
+
+@media all and (max-width: 800px) {
+    .s7 .wedding .plan-c {
+        display: inline-block;
+    }
 }
 
 .s7 h3 {
@@ -567,6 +651,12 @@ form input {
     margin: 0 0 0 50px;
 }
 
+@media all and (max-width: 800px) {
+    .s8 img {
+        margin: 0;
+    }
+}
+
 .s8 .context {
     margin: 50px 80px 0 0;
     float: right;
@@ -581,6 +671,13 @@ form input {
 .s8 .context .border {
     display: block;
     padding-left: 60px;
+}
+
+@media all and (max-width: 800px) {
+    .s8 .context {
+        float: none;
+        margin-left: 10px;
+    }
 }
 
 .s8 h3 {
@@ -610,10 +707,16 @@ form input {
 }
 
 .s10 h2 {
-    margin: 120px 0 80px 0;
+    margin: 120px 10px 80px;
     text-align: center;
     font-size: 40px;
     font-weight: normal;
+}
+
+@media all and (max-width: 800px) {
+    .s10 h2 {
+        display: none;
+    }
 }
 
 .s10 .section-inner {
@@ -683,6 +786,18 @@ form input {
     margin: 0 25px 0 25px;
 }
 
+@media all and (max-width: 800px) {
+    .s11 img {
+        margin: 0;
+    }
+}
+
+@media all and (max-width: 425px) {
+    .s11 img {
+        display: none;
+    }
+}
+
 .s11 .payment {
     text-align: center;
     margin: 0 auto;
@@ -710,7 +825,7 @@ form input {
 }
 
 .s12 h2 {
-    margin: 100px 0 80px;
+    margin: 100px 10px 80px;
     text-align: center;
     font-size: 40px;
     font-weight: normal;
@@ -757,8 +872,20 @@ form input {
     margin: 20px 200px 0 0;
 }
 
+@media all and (max-width: 800px) {
+    .s13 .context {
+        margin: 10px;
+    }
+}
+
 .s13 img {
     margin: 0 0 0 200px;
+}
+
+@media all and (max-width: 800px) {
+    .s13 img {
+        margin: 10px;
+    }
 }
 
 .s13 h3 {
@@ -794,6 +921,12 @@ form input {
     font-weight: normal;
 }
 
+@media all and (max-width: 800px) {
+    .s14 h2 {
+        margin: 20px;
+    }
+}
+
 .s14 .btn {
     text-align: center;
     display: block;
@@ -820,6 +953,7 @@ footer .section-inner {
 footer p {
     font-size: 20px;
     color: #7d7d7d;
+    margin: 10px;
 }
 
 footer a {
@@ -831,6 +965,12 @@ footer a {
 footer i {
     font-size: 20px;
     color: #ffc155;
+}
+
+@media all and (max-width: 800px) {
+    footer .section-inner {
+        display: inline-flex;
+    }
 }
 
 .blog-s1 {
@@ -879,6 +1019,12 @@ footer i {
     padding: 0;
 }
 
+@media all and (max-width: 800px) {
+    .blog .photo img {
+        margin-left: 40px;
+    }
+}
+
 .blog .photo a {
     text-align: center;
     font-size: 18px;
@@ -886,6 +1032,12 @@ footer i {
     display: block;
     color: #000000;
     text-decoration: none;
+}
+
+@media all and (max-width: 800px) {
+    .blog .photo a {
+        margin-left: 40px;
+    }
 }
 
 .blog .photo a:hover {
@@ -928,6 +1080,12 @@ footer i {
     color: #828282;
 }
 
+@media all and (max-width: 800px) {
+    .case p {
+        margin: 20px;
+    }
+}
+
 .case .eyes {
     font-weight: bold;
     color: #575757;
@@ -937,6 +1095,12 @@ footer i {
     font-size: 16px;
     margin: 50px 200px 80px;
     color: #828282;
+}
+
+@media all and (max-width: 800px) {
+    .case h4 {
+        margin: 20px;
+    }
 }
 
 .case a {
@@ -1012,6 +1176,12 @@ footer i {
     margin: 20px 200px 40px;
 }
 
+@media all and (max-width: 800px) {
+    .article h3 {
+        margin: 20px;
+    }
+}
+
 .article p {
     font-size: 16px;
     color: #232323;
@@ -1020,12 +1190,17 @@ footer i {
     font-weight: bold;
 }
 
+@media all and (max-width: 800px) {
+    .article p {
+        margin: 20px;
+    }
+}
+
 .article .w {
     float: right;
     height: 50%;
     width: 50%;
 }
-
 
 @media all and (max-width: 1170px) {
     .section-inner {
