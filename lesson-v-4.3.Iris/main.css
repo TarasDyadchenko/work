@@ -8,12 +8,6 @@ body {
     margin: 7px;
 }
 
-@media all and (max-width: 800px) {
-    .border {
-        display: none;
-    }
-}
-
 .socials i {
     display: inline-block;
     width: 50px;
@@ -337,6 +331,12 @@ form input {
 
 .btn:hover {
     background: #105405;
+}
+
+@media all and (max-width: 375px) {
+    .btn {
+        width: 100%;
+    }
 }
 
 .s3 {
@@ -714,7 +714,7 @@ form input {
 }
 
 @media all and (max-width: 800px) {
-    .s10 h2 {
+    .s10 {
         display: none;
     }
 }
@@ -792,11 +792,11 @@ form input {
     }
 }
 
-@media all and (max-width: 425px) {
-    .s11 img {
-        display: none;
-    }
-}
+/*@media all and (max-width: 425px) {*/
+/*    .s11 img {*/
+/*        display: none;*/
+/*    }*/
+/*}*/
 
 .s11 .payment {
     text-align: center;
@@ -859,6 +859,12 @@ form input {
     background: #f6f5f2;
 }
 
+@media all and (max-width: 800px) {
+    .s13 {
+        text-align: center;
+    }
+}
+
 .s13 h2 {
     margin: 100px 0 80px;
     text-align: center;
@@ -869,12 +875,13 @@ form input {
 
 .s13 .context {
     float: right;
-    margin: 20px 200px 0 0;
+    margin: 50px 200px 50px 50px;
 }
 
 @media all and (max-width: 800px) {
     .s13 .context {
-        margin: 10px;
+        float: none;
+        margin: 0;
     }
 }
 
@@ -882,9 +889,10 @@ form input {
     margin: 0 0 0 200px;
 }
 
-@media all and (max-width: 800px) {
+@media all and (max-width: 375px) {
     .s13 img {
-        margin: 10px;
+        margin: 0 auto;
+        width: 100%;
     }
 }
 
@@ -921,7 +929,7 @@ form input {
     font-weight: normal;
 }
 
-@media all and (max-width: 800px) {
+@media all and (max-width: 490px) {
     .s14 h2 {
         margin: 20px;
     }
@@ -962,6 +970,12 @@ footer a {
     color: #bababa;
 }
 
+@media all and (max-width: 800px) {
+    footer a {
+        margin: 0 10px 10px auto;
+    }
+}
+
 footer i {
     font-size: 20px;
     color: #ffc155;
@@ -969,7 +983,8 @@ footer i {
 
 @media all and (max-width: 800px) {
     footer .section-inner {
-        display: inline-flex;
+        display: flex;
+        flex-wrap: wrap;
     }
 }
 
@@ -1021,7 +1036,8 @@ footer i {
 
 @media all and (max-width: 800px) {
     .blog .photo img {
-        margin-left: 40px;
+        width: 100%;
+
     }
 }
 
@@ -1032,12 +1048,6 @@ footer i {
     display: block;
     color: #000000;
     text-decoration: none;
-}
-
-@media all and (max-width: 800px) {
-    .blog .photo a {
-        margin-left: 40px;
-    }
 }
 
 .blog .photo a:hover {
@@ -1073,6 +1083,12 @@ footer i {
     margin-bottom: 60px;
 }
 
+@media all and (max-width: 800px) {
+    .case {
+        padding-top: 100px;
+    }
+}
+
 .case p {
     margin: 50px 200px;
     line-height: 20px;
@@ -1089,6 +1105,22 @@ footer i {
 .case .eyes {
     font-weight: bold;
     color: #575757;
+}
+
+.case img {
+    max-width: 100%;
+}
+
+.case .img50 {
+    margin-bottom: 10px;
+}
+
+.case .img50 img {
+    max-width: 49%;
+}
+
+.case .img50 img:last-child {
+    float: right;
 }
 
 .case h4 {
@@ -1119,6 +1151,13 @@ footer i {
     border: 1px solid white;
     margin: 0 auto;
     background: white;
+}
+
+@media all and (max-width: 800px) {
+    .case-s1 .context {
+        width: 100%;
+        margin: 0;
+    }
 }
 
 .case-s1 .border {
@@ -1196,11 +1235,19 @@ footer i {
     }
 }
 
-.article .w {
-    float: right;
-    height: 50%;
-    width: 50%;
+.article img {
+    max-width: 100%;
 }
+
+.article .w {
+    margin-bottom: 10px;
+}
+
+.article .w img:last-child {
+    float: right;
+}
+
+
 
 @media all and (max-width: 1170px) {
     .section-inner {
