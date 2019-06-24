@@ -3,7 +3,7 @@
 
 body {
     margin: 0;
-    font-family: Arial, sans-serif;
+    font-family: 'Anglecia Pro Display', 'Avenir Next Cyr', sans-serif;
 }
 
 .border {
@@ -111,6 +111,7 @@ section h4 {
 
 section p {
     font-family: 'Avenir Next Cyr', sans-serif;
+    font-style: italic;
 }
 
 section a {
@@ -295,7 +296,7 @@ form input {
 }
 
 .s2 h2 {
-    margin: 150px 20px 80px;
+    margin: 220px 20px 80px;
 }
 
 @media all and (max-width: 810px) {
