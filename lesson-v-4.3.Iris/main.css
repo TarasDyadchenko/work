@@ -1,3 +1,6 @@
+@import "fonts/Anglecia/stylesheet.css";
+@import "fonts/AvenirNextCyr/stylesheet.css";
+
 body {
     margin: 0;
     font-family: Arial, sans-serif;
@@ -42,6 +45,12 @@ header a {
     font-size: 16px;
     color: #989896;
     text-decoration: none;
+    font-weight: bold;
+    font-family: 'Avenir Next Cyr', sans-serif;
+}
+
+header a:hover {
+    color: #5ead3c;
 }
 
 @media all and (max-width: 800px) {
@@ -82,6 +91,44 @@ header .logo-wrapper img {
     display: block;
 }
 
+section h1 {
+    font-family: 'Anglecia Pro Display', sans-serif;
+}
+
+section h2 {
+    font-family: 'Anglecia Pro Display', sans-serif;
+    font-style: italic;
+}
+
+section h3 {
+    font-family: 'Anglecia Pro Display', sans-serif;
+    font-style: italic;
+}
+
+section h4 {
+    font-family: 'Anglecia Pro Display', sans-serif;
+}
+
+section p {
+    font-family: 'Avenir Next Cyr', sans-serif;
+}
+
+section a {
+    font-family: 'Avenir Next Cyr', sans-serif;
+}
+
+section span {
+    font-family: 'Avenir Next Cyr', sans-serif;
+}
+
+section h5 {
+    font-family: 'Avenir Next Cyr', sans-serif;
+}
+
+section h6 {
+    font-family: 'Avenir Next Cyr', sans-serif;
+}
+
 .s1 {
     background: url("img/s1.bg.jpg") center no-repeat;
     height: 780px;
@@ -91,14 +138,12 @@ header .logo-wrapper img {
     text-align: center;
     font-size: 48px;
     color: white;
-    font-weight: bold;
+    font-weight: 500;
 }
 
 .s1 h2 {
-    text-align: center;
     font-size: 30px;
     color: white;
-    font-weight: normal;
 }
 
 .s1 h3 {
@@ -235,6 +280,7 @@ form input {
     border-radius: 20px;
     border: 1px solid #f3f1ed;
     box-sizing: border-box;
+    font-family: 'Avenir Next Cyr', sans-serif;
 }
 
 .s2 {
@@ -250,9 +296,6 @@ form input {
 
 .s2 h2 {
     margin: 150px 20px 80px;
-    text-align: center;
-    font-size: 40px;
-    font-weight: normal;
 }
 
 @media all and (max-width: 810px) {
@@ -345,9 +388,6 @@ form input {
 
 .s3 h2 {
     margin: 100px 20px 80px;
-    text-align: center;
-    font-size: 40px;
-    font-weight: normal;
 }
 
 .s3 .context {
@@ -541,6 +581,10 @@ form input {
     background: #e8f3e4;
 }
 
+.s7 .plan p:hover {
+    color: #5ead3c;
+}
+
 .s7 .plan-c {
     width: 46%;
     text-align: center;
@@ -632,6 +676,10 @@ form input {
     text-align: center;
     font-size: 20px;
     color: #5ead3c;
+    text-decoration: underline;
+}
+
+.s7 .plan p {
     text-decoration: underline;
 }
 
@@ -865,11 +913,14 @@ form input {
     }
 }
 
-.s13 h2 {
-    margin: 100px 0 80px;
+section h2 {
     text-align: center;
     font-size: 40px;
     font-weight: normal;
+}
+
+.s13 h2 {
+    margin: 100px 0 80px;
     color: #aeaeae;
 }
 
@@ -924,9 +975,7 @@ form input {
 
 .s14 h2 {
     margin: 100px 0 80px;
-    text-align: center;
-    font-size: 40px;
-    font-weight: normal;
+    font-weight: bold;
 }
 
 @media all and (max-width: 490px) {
@@ -945,6 +994,12 @@ form input {
     width: 300px;
     height: 300px;
     padding: 15px;
+}
+
+@media all and (max-width: 320px) {
+    .s14 img {
+        padding: 0;
+    }
 }
 
 .s14 .photo {
@@ -1008,10 +1063,8 @@ footer i {
 }
 
 .blog-s1 h2 {
-    text-align: center;
     color: white;
     font-size: 30px;
-    font-weight: normal;
 }
 
 .blog h3 {
@@ -1076,10 +1129,8 @@ footer i {
 }
 
 .case-s1 h2 {
-    text-align: center;
     color: white;
     font-size: 30px;
-    font-weight: normal;
     margin-bottom: 60px;
 }
 
@@ -1202,10 +1253,8 @@ footer i {
 }
 
 .article-s1 h2 {
-    text-align: center;
     color: white;
     font-size: 30px;
-    font-weight: normal;
     margin-bottom: 60px;
 }
 
@@ -1237,17 +1286,18 @@ footer i {
 
 .article img {
     max-width: 100%;
+    margin-bottom: 3px;
 }
 
 .article .w {
-    margin-bottom: 10px;
+    max-height: 580px;
+    width: 50%;
+    float: right;
 }
 
 .article .w img:last-child {
     float: right;
 }
-
-
 
 @media all and (max-width: 1170px) {
     .section-inner {
