@@ -97,7 +97,6 @@ section h1 {
 
 section h2 {
     font-family: 'Anglecia Pro Display', sans-serif;
-    font-style: italic;
 }
 
 section h3 {
@@ -1295,7 +1294,7 @@ footer i {
 
 .article img {
     max-width: 100%;
-    margin-bottom: 3px;
+    margin: 0 0 3px 4px;
 }
 
 .article .w {
