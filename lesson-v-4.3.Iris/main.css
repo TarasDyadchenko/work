@@ -1284,7 +1284,6 @@ footer i {
 
 .article img {
     max-width: 100%;
-    margin: 0 0 3px 4px;
 }
 
 .article .w {
@@ -1314,4 +1313,49 @@ footer i {
     form {
         display: none;
     }
+}
+
+.popup_bg {
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0,0,0,.4);
+    display: flex;
+}
+.popup {
+    background: #ffffff;
+    margin: auto;
+    width: 780px;
+    box-sizing: border-box;
+    padding: 50px;
+}
+
+.effect input {
+    margin: 5px;
+}
+
+.effect label> input:last-child {
+    height: 80px;
+}
+
+.effect h3 {
+    font-size: 30px;
+    margin-top: 0;
+}
+
+.effect p {
+    margin: 10px 0 20px;
+    font-size: 18px;
+}
+
+.popup {
+    background: url("img/popur.img2.bg.jpg") center no-repeat;
+    height: 420px;
+}
+
+.effect {
+    float: right;
+    width: 50%;
 }
