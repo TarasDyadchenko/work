@@ -1346,9 +1346,15 @@ footer i {
 .popup {
     background: #ffffff;
     margin: auto;
-    width: 780px;
+    width: 510px;
     box-sizing: border-box;
     padding: 50px;
+    position: relative;
+}
+.ask-form-popup .popup {
+    background: url("img/popur.img2.bg.jpg") center no-repeat;
+    height: 420px;
+    width: 780px;
 }
 
 .effect input,
@@ -1371,11 +1377,6 @@ footer i {
     font-size: 18px;
 }
 
-.popup {
-    background: url("img/popur.img2.bg.jpg") center no-repeat;
-    height: 420px;
-    position: relative;
-}
 .popup .close {
     position: absolute;
     right: 10px;

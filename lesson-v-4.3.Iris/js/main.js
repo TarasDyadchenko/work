@@ -22,7 +22,15 @@
                 .fadeOut();
         });
         $('.ask').on('click', function () {
-            $('.popup_bg')
+            $('.ask-form-popup')
+                .addClass('opened')
+                .fadeIn();
+        });
+
+        // popup 2
+        $('.effect a').on('click', function () {
+            $('.popup_bg').fadeOut();
+            $('.ask-thanks')
                 .addClass('opened')
                 .fadeIn();
         });
