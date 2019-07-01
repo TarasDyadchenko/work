@@ -5,6 +5,7 @@ body {
     margin: 0;
     font-family: 'Anglecia Pro Display', sans-serif;
 }
+
 * {
     outline: none;
 }
@@ -261,9 +262,10 @@ form textarea {
     box-sizing: border-box;
     font-family: 'Avenir Next Cyr', sans-serif;
 }
+
 form input:focus,
 form textarea:focus {
-    box-shadow: 0 0 5px 0 rgba(128,169,186,1);
+    box-shadow: 0 0 5px 0 rgba(128, 169, 186, 1);
 }
 
 .s2 {
@@ -670,7 +672,7 @@ form textarea:focus {
 
 .s7 i {
     font-size: 20px;
-    color: red;
+    color: #5ead3c;
 }
 
 
@@ -1124,7 +1126,7 @@ footer i {
 
 .blog .fa-redo {
     font-size: 20px;
-    color: red;
+    color: #5ead3c;
 }
 
 .case-s1 {
@@ -1343,6 +1345,7 @@ footer i {
 .popup_bg.opened {
     display: flex;
 }
+
 .popup {
     background: #ffffff;
     margin: auto;
@@ -1351,6 +1354,7 @@ footer i {
     padding: 50px;
     position: relative;
 }
+
 .ask-form-popup .popup {
     background: url("img/popur.img2.bg.jpg") center no-repeat;
     height: 420px;
@@ -1386,6 +1390,7 @@ footer i {
     box-sizing: border-box;
     padding-top: 12px;
 }
+
 .popup .close:before,
 .popup .close:after {
     content: '';
@@ -1395,9 +1400,11 @@ footer i {
     display: block;
     transform-origin: center;
 }
+
 .popup .close:before {
     transform: rotate(45deg);
 }
+
 .popup .close:after {
     transform: rotate(-45deg);
 }
@@ -1405,4 +1412,16 @@ footer i {
 .effect {
     float: right;
     width: 50%;
+}
+
+.ask-thanks h3 {
+    font-size: 48px;
+    color: #575757;
+    text-align: center;
+}
+
+.ask-thanks p {
+    font-size: 18px;
+    color: #b6b6b6;
+    text-align: center;
 }
