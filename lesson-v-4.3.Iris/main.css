@@ -671,8 +671,9 @@ form textarea:focus {
 }
 
 .s7 i {
-    font-size: 20px;
+    font-size: 30px;
     color: #5ead3c;
+    margin-right: 10px;
 }
 
 
@@ -1122,11 +1123,13 @@ footer i {
     font-size: 20px;
     margin: 50px 0 80px 0;
     color: #5ead3c;
+    text-decoration: underline;
 }
 
 .blog .fa-redo {
-    font-size: 20px;
+    font-size: 30px;
     color: #5ead3c;
+    margin-right: 10px;
 }
 
 .case-s1 {
