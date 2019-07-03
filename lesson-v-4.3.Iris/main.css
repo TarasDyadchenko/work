@@ -1423,6 +1423,14 @@ footer i {
     text-align: center;
 }
 
+.ask-thanks h3:after {
+    content: '';
+    display: block;
+    border-bottom: 1px dashed #E7BC6C;
+    margin: 20px auto 0;
+    width: 150px;
+}
+
 .ask-thanks p {
     font-size: 18px;
     color: #b6b6b6;
