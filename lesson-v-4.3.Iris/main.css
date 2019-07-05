@@ -132,10 +132,13 @@ section h6 {
     font-size: 20px;
     color: white;
     font-weight: normal;
+    font-family: 'Anglecia Pro Display', sans-serif;
+    font-style: italic;
 }
 
 .s1 .b {
     font-size: 30px;
+    font-family: 'Anglecia Pro Display', sans-serif;
 }
 
 .s1 .front {
