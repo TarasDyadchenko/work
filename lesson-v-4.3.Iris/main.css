@@ -903,6 +903,7 @@ form textarea:focus {
 
 .s12 p:hover {
     color: #5ead3c;
+    cursor: pointer;
 }
 
 .s12 .btn {
