@@ -95,11 +95,12 @@ header .logo-wrapper img {
     display: block;
 }
 
-section h3,
-section p {
+section h3
+ {
     font-family: 'Anglecia Pro Display', sans-serif;
 }
 
+section p,
 section a,
 section span,
 section h5,
