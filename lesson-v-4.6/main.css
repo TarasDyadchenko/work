@@ -164,9 +164,6 @@ header {
 .s8 {
   background: #f8f8f8; }
 
-p {
-  margin-bottom: 90px; }
-
 .s9 img {
   width: calc(100% + 30px);
   margin: 0 -15px; }
@@ -213,6 +210,8 @@ p {
   margin-bottom: 30px; }
 .s14 h6 {
   margin-bottom: 20px; }
+.s14 .fab {
+  margin-top: 10px; }
 .s14 form {
   font-size: 0; }
   .s14 form input {

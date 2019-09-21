@@ -248,10 +248,6 @@ header {
   background: #f8f8f8;
 }
 
-p {
-  margin-bottom: 90px;
-}
-
 .s9 {
   img {
     width: calc(100% + 30px);
@@ -331,7 +327,9 @@ p {
   h6 {
     margin-bottom: 20px;
   }
-
+  .fab {
+    margin-top: 10px;
+  }
 
   form {
     font-size: 0;
