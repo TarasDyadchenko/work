@@ -60,6 +60,33 @@
 </section>
 <section class="s3 text-center">
     <div class="container">
+
+        <!-- Button trigger modal -->
+        <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal">
+            Запустить модальное окно
+        </button>
+
+        <!-- Modal -->
+        <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                    <div class="modal-body">
+                        ...
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                        <button type="button" class="btn btn-primary">Save changes</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
         <div class="row justify-content-between text-center">
             <div class="col-2"><h3>42</h3>
                 <p>Web Design Projects</p>
@@ -173,32 +200,90 @@
         <div class="row">
             <img src="img/s6.img.jpg" alt="1" class="col-6">
             <div class="col-6">
-                <i class="fas fa-camera-retro"></i>
-                <h5>Photography</h5>
+                <div class="row">
+                    <div class="col-1">
+                        <i class="fas fa-camera-retro"></i>
+                    </div>
+                    <div class="col-11">
+                        <h5>Photography</h5>
+                    </div>
+                </div>
                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
                     labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
                     laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in
                     voluptate velit esse cillum dolore eu fugiat nulla </p>
-                <i class="fab fa-app-store"></i>
-                <h5>creativity</h5>
-                <i class="fab fa-bitcoin"></i>
-                <h5>web design</h5>
+                <div class="row">
+                    <div class="col-1">
+                        <i class="fab fa-app-store"></i>
+                    </div>
+                    <div class="col-11">
+                        <h5>creativity</h5>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-1">
+                        <i class="fab fa-bitcoin"></i>
+                    </div>
+                    <div class="col-11">
+                        <h5>web design</h5>
+                    </div>
+                </div>
             </div>
         </div>
     </div>
 </section>
 <section class="s6-a">
     <div class="container">
-        <div class="row">
-            <div class="col-2 offset-1">
-                <img src="img/img-6a.png" alt="1">
+
+
+
+        <div id="carouselControls" class="carousel slide" data-ride="carousel">
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <div class="row align-items-start">
+                        <img src="img/img-6a.png" alt="1" class="col-2 offset-1">
+                        <div class="col-8 s6-a-text">
+                            <p>“Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                                incididunt ut labore et
+                                dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation.”</p>
+                            <h5 class="line-left">Jon Doe</h5>
+                        </div>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <div class="row align-items-start">
+                        <img src="img/img-6a.png" alt="1" class="col-2 offset-1">
+                        <div class="col-8 s6-a-text">
+                            <p>“Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                                incididunt ut labore et
+                                dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation.”</p>
+                            <h5 class="line-left">Jon Doe</h5>
+                        </div>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <div class="row align-items-start">
+                        <img src="img/img-6a.png" alt="1" class="col-2 offset-1">
+                        <div class="col-8 s6-a-text">
+                            <p>“Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                                incididunt ut labore et
+                                dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation.”</p>
+                            <h5 class="line-left">Jon Doe</h5>
+                        </div>
+                    </div>
+                </div>
             </div>
-            <div class="col-8"><p>“Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
-                incididunt ut labore et
-                dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation.”</p>
-                <h5 class="line-left">Jon Doe</h5>
-            </div>
+            <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
+                <i></i>
+            </a>
+            <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
+                <i></i>
+            </a>
         </div>
+
+
+
+
     </div>
 </section>
 <section class="s7 text-center">
@@ -262,21 +347,56 @@
 </section>
 <section class="s10">
     <div class="container">
-        <div class="row align-items-start">
-            <img src="img/s10.img.jpg" alt="1" class="col-2 offset-1">
-            <div class="col-8 s10-text">
-                <h4>“Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore
-                    et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation.”</h4>
-                <h5 class="line-left">Joshua Earle</h5>
+
+
+        <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <div class="row align-items-start">
+                        <img src="img/s10.img.jpg" alt="1" class="col-2 offset-1">
+                        <div class="col-8 s10-text">
+                            <h4>“Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore
+                                et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation.”</h4>
+                            <h5 class="line-left">Joshua Earle</h5>
+                        </div>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <div class="row align-items-start">
+                        <img src="img/s10.img.jpg" alt="1" class="col-2 offset-1">
+                        <div class="col-8 s10-text">
+                            <h4>“Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore
+                                et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation.”</h4>
+                            <h5 class="line-left">Joshua Earle</h5>
+                        </div>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <div class="row align-items-start">
+                        <img src="img/s10.img.jpg" alt="1" class="col-2 offset-1">
+                        <div class="col-8 s10-text">
+                            <h4>“Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore
+                                et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation.”</h4>
+                            <h5 class="line-left">Joshua Earle</h5>
+                        </div>
+                    </div>
+                </div>
             </div>
+            <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
+                <i></i>
+            </a>
+            <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
+                <i></i>
+            </a>
         </div>
+
     </div>
 </section>
 <section class="s11">
     <div class="container">
         <h3 class="text-center line-bottom">Happy Clients</h3>
         <div class="row">
-            <div class="col-6">
+            <div class="col-md-6 col-sm-12 col-lg-4">
                 <div class="row align-items-start">
                     <img src="img/s11.img1.png" alt="1" class="col-3">
                     <div class="col-9">
@@ -287,7 +407,7 @@
                     </div>
                 </div>
             </div>
-            <div class="col-6">
+            <div class="col-md-6 col-sm-12 col-lg-4">
                 <div class="row align-items-start">
                     <img src="img/s11.img2.png" alt="2" class="col-3">
                     <div class="col-9">
@@ -299,7 +419,7 @@
                     </div>
                 </div>
             </div>
-            <div class="col-6">
+            <div class="col-md-6 col-sm-12 col-lg-4">
                 <div class="row align-items-start">
                     <img src="img/s11.img3.png" alt="3" class="col-3">
                     <div class="col-9">
@@ -311,7 +431,7 @@
                     </div>
                 </div>
             </div>
-            <div class="col-6">
+            <div class="col-md-6 col-sm-12 col-lg-4 offset-lg-4">
                 <div class="row align-items-start">
                     <img src="img/s11.img4.png" alt="4" class="col-3">
                     <div class="col-9">
@@ -368,18 +488,18 @@
                 <div class="row socials">
                     <div class="col-4"><h6>Follow Us:</h6></div>
                     <div class="col-8">
+                        <i class="fab fa-facebook"></i>
                         <i class="fab fa-twitter"></i>
-                        <i class="fab fa-twitter"></i>
-                        <i class="fab fa-twitter"></i>
-                        <i class="fab fa-twitter"></i>
-                        <i class="fab fa-twitter"></i>
-                        <i class="fab fa-twitter"></i>
-                        <i class="fab fa-twitter"></i>
-                        <i class="fab fa-twitter"></i>
+                        <i class="fas fa-camera-retro"></i>
+                        <i class="fab fa-pinterest-p"></i>
+                        <i class="fab fa-google-plus-g"></i>
+                        <i class="fas fa-caret-square-right"></i>
+                        <i class="fas fa-basketball-ball"></i>
+                        <i class="fab fa-tumblr"></i>
                     </div>
                 </div>
                 <form action="/">
-                    <input type="text" placeholder="Your Email..">
+                    <label><input type="text" placeholder="Your Email.."></label>
                     <input type="button" value="Subscribe" class="btn-2">
                 </form>
             </div>

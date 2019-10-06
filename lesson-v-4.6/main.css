@@ -143,21 +143,28 @@ header {
 
 .s6 i {
   font-size: 40px;
-  color: #a4e5d9; }
+  color: #a4e5d9;
+  margin-top: 10px; }
 .s6 p {
-  margin-bottom: 90px; }
+  margin-bottom: 50px;
+  color: #bebebe; }
+.s6 h3 {
+  margin-top: 50px; }
 
 .s6-a {
   background: #f8f8f8;
   height: 290px; }
   .s6-a p {
-    font-size: 24px; }
+    font-size: 24px;
+    color: #a3a3a3; }
   .s6-a h5 {
     font-size: 24px;
-    text-transform: capitalize; }
+    text-transform: capitalize;
+    margin-top: 0; }
 
 .s7 p {
-  margin-bottom: 90px; }
+  margin-bottom: 90px;
+  color: #bebebe; }
 .s7 img {
   width: 100%; }
 
@@ -167,24 +174,40 @@ header {
 .s9 img {
   width: calc(100% + 30px);
   margin: 0 -15px; }
+.s9 p {
+  margin-bottom: 90px;
+  color: #bebebe; }
 
-.s10-text {
-  margin-top: 20px; }
-.s10 h4 {
-  font-size: 24px; }
+.s10 {
+  padding-bottom: 100px; }
+  .s10-text {
+    margin-top: 20px; }
+  .s10 h4 {
+    font-size: 24px;
+    color: #a3a3a3; }
 
 .s11 {
   background: url("img/s11.img.bg.jpg") center no-repeat;
-  height: 830px; }
+  min-height: 830px;
+  background-size: cover; }
   .s11 .align-items-start {
     margin-top: 100px; }
   .s11 p {
-    margin-bottom: 0; }
+    margin-bottom: 0;
+    font-size: 15px;
+    color: #b3b3b3; }
   .s11 .row .line-bottom:after {
     margin-left: 0; }
 
 .s12 img {
   width: 100%; }
+.s12 h6 {
+  color: #bebebe;
+  font-size: 15px; }
+.s12 h5 {
+  font-size: 14px;
+  text-transform: uppercase;
+  color: #a4a4a4; }
 
 .s13 {
   background: url("img/s12.img.bg.jpg") center no-repeat;
@@ -196,6 +219,8 @@ header {
 
 .s14 img {
   margin-bottom: 4px; }
+.s14 p {
+  color: #a3a3a3; }
 .s14 h4 {
   margin-bottom: 30px;
   text-transform: uppercase;
@@ -210,8 +235,10 @@ header {
   margin-bottom: 30px; }
 .s14 h6 {
   margin-bottom: 20px; }
-.s14 .fab {
-  margin-top: 10px; }
+.s14 .fab, .s14 .fas {
+  margin-top: 10px;
+  color: #95e1d3;
+  margin-right: 5px; }
 .s14 form {
   font-size: 0; }
   .s14 form input {
@@ -233,6 +260,17 @@ header {
       .s14 form input[type=button]:hover {
         background: #1215ff;
         color: #0fffdd; }
+
+.carousel [class^=carousel-control] i {
+  display: block;
+  width: 15px;
+  height: 15px;
+  border-right: 3px solid #777;
+  border-bottom: 3px solid #777; }
+.carousel .carousel-control-prev i {
+  transform: rotate(135deg); }
+.carousel .carousel-control-next i {
+  transform: rotate(-45deg); }
 
 footer p {
   text-align: center;

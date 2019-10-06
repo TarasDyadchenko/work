@@ -213,10 +213,16 @@ header {
   i {
     font-size: 40px;
     color: #a4e5d9;
+    margin-top: 10px;
   }
 
   p {
-    margin-bottom: 90px;
+    margin-bottom: 50px;
+    color: #bebebe;
+  }
+
+  h3 {
+    margin-top: 50px;
   }
 }
 
@@ -226,17 +232,20 @@ header {
 
   p {
     font-size: 24px;
+    color: #a3a3a3;
   }
 
   h5 {
     font-size: 24px;
     text-transform: capitalize;
+    margin-top: 0;
   }
 }
 
 .s7 {
   p {
     margin-bottom: 90px;
+    color: #bebebe;
   }
 
   img {
@@ -253,6 +262,11 @@ header {
     width: calc(100% + 30px);
     margin: 0 -15px;
   }
+
+  p {
+    margin-bottom: 90px;
+    color: #bebebe;
+  }
 }
 
 .s10 {
@@ -262,12 +276,16 @@ header {
 
   h4 {
     font-size: 24px;
+    color: #a3a3a3;
   }
+
+  padding-bottom: 100px;
 }
 
 .s11 {
   background: url("img/s11.img.bg.jpg") center no-repeat;
-  height: 830px;
+  min-height: 830px;
+  background-size: cover;
 
   .align-items-start {
     margin-top: 100px;
@@ -275,6 +293,8 @@ header {
 
   p {
     margin-bottom: 0;
+    font-size: 15px;
+    color: #b3b3b3;
   }
 
   .row .line-bottom:after {
@@ -285,6 +305,17 @@ header {
 .s12 {
   img {
     width: 100%;
+  }
+
+  h6 {
+    color: #bebebe;
+    font-size: 15px;
+  }
+
+  h5 {
+    font-size: 14px;
+    text-transform: uppercase;
+    color: #a4a4a4;
   }
 }
 
@@ -303,7 +334,9 @@ header {
   img {
     margin-bottom: 4px;
   }
-
+p {
+  color: #a3a3a3;
+}
   h4 {
     margin-bottom: 30px;
     text-transform: uppercase;
@@ -327,8 +360,11 @@ header {
   h6 {
     margin-bottom: 20px;
   }
-  .fab {
+
+  .fab, .fas {
     margin-top: 10px;
+    color: #95e1d3;
+    margin-right: 5px;
   }
 
   form {
@@ -361,6 +397,28 @@ header {
           color: #0fffdd;
         }
       }
+    }
+  }
+}
+
+.carousel {
+  [class^=carousel-control] {
+    i {
+      display: block;
+      width: 15px;
+      height: 15px;
+      border-right: 3px solid #777;
+      border-bottom: 3px solid #777;
+    }
+  }
+  .carousel-control-prev {
+    i {
+      transform: rotate(135deg);
+    }
+  }
+  .carousel-control-next {
+    i {
+      transform: rotate(-45deg);
     }
   }
 }
