@@ -54,15 +54,25 @@ header {
     }
   }
 
-  & > a:not(.logo):hover:after {
-    content: '';
-    display: block;
-    width: 100%;
-    height: 3px;
-    margin-bottom: -3px;
-    background: #fce38a;
+  & > a:not(.logo):not(.hamburger) {
+    &:hover:after {
+      content: '';
+      display: block;
+      width: 100%;
+      height: 3px;
+      margin-bottom: -3px;
+      background: #fce38a;
+    }
+    @media all and (max-width: 1200px) {
+      display: none;
+    }
   }
-
+  .hamburher {
+    display: none;
+    @media all and (max-width: 1200px) {
+      display: block;
+    }
+  }
   i {
     font-size: 15px;
   }
@@ -97,7 +107,7 @@ header {
 
 .s1 {
   background: url("img/s1.img-bg.jpg") center no-repeat;
-  height: 1000px;
+   min-height: 1000px;
 
   &-slider {
     height: 900px;
@@ -107,7 +117,7 @@ header {
       display: inline-block;
       line-height: 40px;
       text-align: center;
-      width: 160px;
+      min-width: 160px;
       text-transform: uppercase;
       background: none;
       color: white;
@@ -126,13 +136,20 @@ header {
     font-size: 150px;
     color: white;
     text-transform: uppercase;
-
+text-align: center;
+    @media all and (max-width: 1024px){
+      font-size: 110px;
+    }
+    @media all and (max-width: 640px){
+      font-size: 80px;
+    }
   }
 
   h2 {
     font-size: 72px;
     color: white;
     text-transform: uppercase;
+    text-align: center;
   }
 
   .line-bottom:after {
@@ -195,7 +212,9 @@ header {
 .s5 {
   background: url("img/img.s5.bg.jpg") center no-repeat;
   padding-bottom: 0;
-
+  img {
+    max-width: 100%;
+  }
   .row {
     height: 685px;
     position: relative;
@@ -205,6 +224,9 @@ header {
       left: 50%;
       bottom: -90px;
       margin-left: 140px;
+      @media all and (max-width: 920px) {
+        margin-left: -137px;
+      }
     }
   }
 }
@@ -228,7 +250,7 @@ header {
 
 .s6-a {
   background: #f8f8f8;
-  height: 290px;
+  min-height: 290px;
 
   p {
     font-size: 24px;
@@ -255,6 +277,9 @@ header {
 
 .s8 {
   background: #f8f8f8;
+  img {
+    width: 100%;
+  }
 }
 
 .s9 {
@@ -379,8 +404,7 @@ p {
       padding: 0 8px;
 
       &[type=text] {
-        width: 220px;
-
+        width: 210px;
       }
 
       &[type=button] {

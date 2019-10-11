@@ -36,13 +36,21 @@ header {
     header a:hover {
       color: #fce38a;
       text-decoration: none; }
-  header > a:not(.logo):hover:after {
+  header > a:not(.logo):not(.hamburger):hover:after {
     content: '';
     display: block;
     width: 100%;
     height: 3px;
     margin-bottom: -3px;
     background: #fce38a; }
+  @media all and (max-width: 1200px) {
+    header > a:not(.logo):not(.hamburger) {
+      display: none; } }
+  header .hamburher {
+    display: none; }
+    @media all and (max-width: 1200px) {
+      header .hamburher {
+        display: block; } }
   header i {
     font-size: 15px; }
   header > :last-child a:last-child {
@@ -67,7 +75,7 @@ header {
 
 .s1 {
   background: url("img/s1.img-bg.jpg") center no-repeat;
-  height: 1000px; }
+  min-height: 1000px; }
   .s1-slider {
     height: 900px; }
     .s1-slider a {
@@ -75,7 +83,7 @@ header {
       display: inline-block;
       line-height: 40px;
       text-align: center;
-      width: 160px;
+      min-width: 160px;
       text-transform: uppercase;
       background: none;
       color: white;
@@ -88,11 +96,19 @@ header {
   .s1 h1 {
     font-size: 150px;
     color: white;
-    text-transform: uppercase; }
+    text-transform: uppercase;
+    text-align: center; }
+    @media all and (max-width: 1024px) {
+      .s1 h1 {
+        font-size: 110px; } }
+    @media all and (max-width: 640px) {
+      .s1 h1 {
+        font-size: 80px; } }
   .s1 h2 {
     font-size: 72px;
     color: white;
-    text-transform: uppercase; }
+    text-transform: uppercase;
+    text-align: center; }
   .s1 .line-bottom:after {
     background: #ffffff; }
 
@@ -132,6 +148,8 @@ header {
 .s5 {
   background: url("img/img.s5.bg.jpg") center no-repeat;
   padding-bottom: 0; }
+  .s5 img {
+    max-width: 100%; }
   .s5 .row {
     height: 685px;
     position: relative; }
@@ -140,6 +158,9 @@ header {
       left: 50%;
       bottom: -90px;
       margin-left: 140px; }
+      @media all and (max-width: 920px) {
+        .s5 .row .mobile {
+          margin-left: -137px; } }
 
 .s6 i {
   font-size: 40px;
@@ -153,7 +174,7 @@ header {
 
 .s6-a {
   background: #f8f8f8;
-  height: 290px; }
+  min-height: 290px; }
   .s6-a p {
     font-size: 24px;
     color: #a3a3a3; }
@@ -170,6 +191,8 @@ header {
 
 .s8 {
   background: #f8f8f8; }
+  .s8 img {
+    width: 100%; }
 
 .s9 img {
   width: calc(100% + 30px);
@@ -249,7 +272,7 @@ header {
     font-size: 14px;
     padding: 0 8px; }
     .s14 form input[type=text] {
-      width: 220px; }
+      width: 210px; }
     .s14 form input[type=button] {
       width: 120px;
       background: #56ccb9;
