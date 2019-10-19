@@ -53,6 +53,27 @@ header {
       text-decoration: none;
     }
   }
+  .menu {
+    .menu-inner {
+      display: flex;
+      width: 100%;
+      justify-content: space-between;
+      @media all and (max-width: 992px) {
+        flex-direction: column;
+      }
+    }
+    @media all and (max-width: 992px) {
+      display: none;
+      position: fixed;
+      left: 0;
+      top: 0;
+      width: 100vw;
+      height: 100vh;
+      max-width: 100%;
+      z-index: 2;
+      background: #ff705c;
+    }
+  }
 
   & > a:not(.logo):not(.hamburger) {
     &:hover:after {
@@ -63,16 +84,24 @@ header {
       margin-bottom: -3px;
       background: #fce38a;
     }
-    @media all and (max-width: 1200px) {
-      display: none;
+  }
+  .close {
+    position: absolute;
+    z-index: 2;
+    right: 10px;
+    top: 10px;
+    opacity: 1;
+    .fa-times {
+      color: #fff;
     }
   }
-  .hamburher {
+  .hamburger, .close {
     display: none;
-    @media all and (max-width: 1200px) {
+    @media all and (max-width: 992px) {
       display: block;
     }
   }
+
   i {
     font-size: 15px;
   }
@@ -107,7 +136,7 @@ header {
 
 .s1 {
   background: url("img/s1.img-bg.jpg") center no-repeat;
-   min-height: 1000px;
+  min-height: 1000px;
 
   &-slider {
     height: 900px;
@@ -136,7 +165,7 @@ header {
     font-size: 150px;
     color: white;
     text-transform: uppercase;
-text-align: center;
+    text-align: center;
     @media all and (max-width: 1024px){
       font-size: 110px;
     }
@@ -212,9 +241,11 @@ text-align: center;
 .s5 {
   background: url("img/img.s5.bg.jpg") center no-repeat;
   padding-bottom: 0;
+
   img {
     max-width: 100%;
   }
+
   .row {
     height: 685px;
     position: relative;
@@ -277,6 +308,7 @@ text-align: center;
 
 .s8 {
   background: #f8f8f8;
+
   img {
     width: 100%;
   }
@@ -359,9 +391,11 @@ text-align: center;
   img {
     margin-bottom: 4px;
   }
-p {
-  color: #a3a3a3;
-}
+
+  p {
+    color: #a3a3a3;
+  }
+
   h4 {
     margin-bottom: 30px;
     text-transform: uppercase;
@@ -435,11 +469,13 @@ p {
       border-bottom: 3px solid #777;
     }
   }
+
   .carousel-control-prev {
     i {
       transform: rotate(135deg);
     }
   }
+
   .carousel-control-next {
     i {
       transform: rotate(-45deg);

@@ -36,6 +36,24 @@ header {
     header a:hover {
       color: #fce38a;
       text-decoration: none; }
+  header .menu .menu-inner {
+    display: flex;
+    width: 100%;
+    justify-content: space-between; }
+    @media all and (max-width: 992px) {
+      header .menu .menu-inner {
+        flex-direction: column; } }
+  @media all and (max-width: 992px) {
+    header .menu {
+      display: none;
+      position: fixed;
+      left: 0;
+      top: 0;
+      width: 100vw;
+      height: 100vh;
+      max-width: 100%;
+      z-index: 2;
+      background: #ff705c; } }
   header > a:not(.logo):not(.hamburger):hover:after {
     content: '';
     display: block;
@@ -43,13 +61,18 @@ header {
     height: 3px;
     margin-bottom: -3px;
     background: #fce38a; }
-  @media all and (max-width: 1200px) {
-    header > a:not(.logo):not(.hamburger) {
-      display: none; } }
-  header .hamburher {
+  header .close {
+    position: absolute;
+    z-index: 2;
+    right: 10px;
+    top: 10px;
+    opacity: 1; }
+    header .close .fa-times {
+      color: #fff; }
+  header .hamburger, header .close {
     display: none; }
-    @media all and (max-width: 1200px) {
-      header .hamburher {
+    @media all and (max-width: 992px) {
+      header .hamburger, header .close {
         display: block; } }
   header i {
     font-size: 15px; }
