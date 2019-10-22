@@ -19,6 +19,34 @@ section h6 {
   color: #000;
   margin: 10px 0; }
 
+@media all and (max-width: 991px) {
+  nav.navbar-light .navbar-collapse {
+    position: absolute;
+    top: 55px; } }
+nav.navbar-light .nav-item .nav-link {
+  color: #f8f9fa;
+  font-size: 14px;
+  text-transform: uppercase;
+  margin: 0 12px;
+  display: inline-block; }
+  nav.navbar-light .nav-item .nav-link:hover {
+    color: #fce38a; }
+    nav.navbar-light .nav-item .nav-link:hover:not(.icon):after {
+      content: '';
+      display: block;
+      width: 100%;
+      height: 3px;
+      margin-bottom: -3px;
+      background: #fce38a; }
+  nav.navbar-light .nav-item .nav-link i {
+    margin-top: 3px;
+    vertical-align: top; }
+nav.navbar-light a.navbar-brand {
+  font-size: 30px;
+  color: #f8f9fa; }
+  nav.navbar-light a.navbar-brand:hover {
+    color: #fce38a; }
+
 header {
   position: relative; }
   header .logo {

@@ -30,6 +30,47 @@ section {
   }
 }
 
+nav.navbar-light {
+  .navbar-collapse {
+    @media all and (max-width: 991px) {
+      position: absolute;
+      top: 55px;
+    }
+  }
+  .nav-item .nav-link {
+    color: #f8f9fa;
+    font-size: 14px;
+    text-transform: uppercase;
+    margin: 0 12px;
+    display: inline-block;
+
+    &:hover {
+      color: #fce38a;
+      &:not(.icon):after {
+      content: '';
+      display: block;
+      width: 100%;
+      height: 3px;
+      margin-bottom: -3px;
+      background: #fce38a;
+    }
+  }
+
+  i {
+    margin-top: 3px;
+    vertical-align: top;
+  }
+}
+
+a.navbar-brand {
+  font-size: 30px;
+  color: #f8f9fa;
+  &:hover {
+    color: #fce38a;
+  }
+}
+
+}
 header {
   position: relative;
 
@@ -53,6 +94,7 @@ header {
       text-decoration: none;
     }
   }
+
   .menu {
     .menu-inner {
       display: flex;
@@ -62,6 +104,7 @@ header {
         flex-direction: column;
       }
     }
+
     @media all and (max-width: 992px) {
       display: none;
       position: fixed;
@@ -85,16 +128,19 @@ header {
       background: #fce38a;
     }
   }
+
   .close {
     position: absolute;
     z-index: 2;
     right: 10px;
     top: 10px;
     opacity: 1;
+
     .fa-times {
       color: #fff;
     }
   }
+
   .hamburger, .close {
     display: none;
     @media all and (max-width: 992px) {
@@ -166,10 +212,10 @@ header {
     color: white;
     text-transform: uppercase;
     text-align: center;
-    @media all and (max-width: 1024px){
+    @media all and (max-width: 1024px) {
       font-size: 110px;
     }
-    @media all and (max-width: 640px){
+    @media all and (max-width: 640px) {
       font-size: 80px;
     }
   }
