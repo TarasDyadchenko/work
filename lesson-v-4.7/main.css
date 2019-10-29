@@ -1,0 +1,23 @@
+* {
+  outline: none; }
+
+img:not(.logo) {
+  width: 100%; }
+
+header .btn-group {
+  background: #898989;
+  display: block;
+  font-size: 0; }
+  header .btn-group .btn {
+    border-radius: 0;
+    border: none;
+    font-size: 16px;
+    text-transform: uppercase;
+    color: #ffffff; }
+    header .btn-group .btn:last-child {
+      margin-right: auto;
+      background: #898989; }
+    header .btn-group .btn:nth-child(1) {
+      background: #00aedb; }
+
+/*# sourceMappingURL=main.css.map */

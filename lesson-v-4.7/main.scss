@@ -1,0 +1,36 @@
+* {
+  outline: none;
+}
+img:not(.logo) {
+  width: 100%;
+}
+header {
+  .btn-group {
+    background: #898989;
+    display: block;
+    font-size: 0;
+    .btn {
+      border-radius: 0;
+      border: none;
+      font-size: 16px;
+      text-transform: uppercase;
+      color: #ffffff;
+      &:last-child {
+        margin-right: auto;
+        background: #898989;
+      }
+      &:nth-child(1) {
+        background: #00aedb;
+      }
+      &:nth-child(2) {
+
+      }
+      &:nth-child(3) {
+
+      }
+      &:nth-child(4) {
+
+      }
+    }
+  }
+}
