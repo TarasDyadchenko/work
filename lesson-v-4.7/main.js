@@ -1,7 +1,4 @@
-// ;(function($){
-//     $(function () {
-//         $('.hamburger, .close').on('click', function () {
-//             $('.menu, .hamburger').toggle();
-//         });
-//     });
-// })(jQuery);
+$("#tagcloud a").tagcloud({
+    size: {start: 12, end: 36, unit: "px"},
+    color: {start: '#3498DB', end: '#46CFB0'}
+});
