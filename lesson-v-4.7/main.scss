@@ -2,9 +2,24 @@
   outline: none;
 }
 
+@mixin hover($bg) {
+  background: $bg;
+  &:hover {
+    background: darken($bg, 10);
+  }
+}
+
+@mixin hoverIcon($c) {
+  color: $c;
+  &:hover {
+    color: darken($c, 10);
+  }
+}
+
 body {
   position: relative;
   background: #ebebeb;
+
   &:before {
     content: '';
     display: block;
@@ -61,65 +76,79 @@ header {
       }
 
       &:nth-child(1) {
-        background: #00aedb;
+        @include hover(#00aedb);
       }
 
       &:nth-child(2) {
-        background: #8cc63f;
+        @include hover(#8cc63f);
       }
 
       &:nth-child(3) {
-        background: #5261ac;
+        @include hover(#5261ac);
       }
 
       &:nth-child(4) {
-        background: #00aedb;
+        @include hover(#00aedb);
       }
 
       &:nth-child(5) {
-        background: #f78f1d;
+        @include hover(#f78f1d);
       }
 
       &:nth-child(6) {
-        background: #ff0000;
+        @include hover(#ff0000);
       }
 
       &:nth-child(7) {
-        background: #898989;
+        @include hover(#898989);
       }
     }
   }
 
-  form label {
-    float: left;
-    margin-right: -1px;
+  input {
+    width: 244px;
   }
 
-  .col-4 {
+  form {
+    display: inline-block;
+    label {
+      float: left;
+      margin-right: -1px;
+      margin-bottom: 0;
+    }
+  }
+
+  .col-3, .col-6 {
     padding-top: 10px;
   }
 
-  .fab {
+  .fa-twitter-square {
     font-size: 40px;
-    color: #00bff3;
+    @include hoverIcon(#00bff3);
   }
 
-  .fas {
+  .fa-wifi {
     font-size: 40px;
-    color: #f78f1d;
+    @include hoverIcon(#f78f1d);
   }
 
-  .fa-facebook-square:before {
-    content: "\f082";
-    color: #1e2059;
+  .fa-facebook-square {
+    font-size: 40px;
+    @include hoverIcon(#1e2059);
   }
 
   .socials {
     text-align: right;
+
+    a {
+      &:hover {
+        text-decoration: none;
+      }
+    }
   }
 
   .btn-2 {
-    width: 107px;
+    width: 100px;
     font-size: 17px;
     background: #00aedb;
     color: white;
@@ -127,6 +156,10 @@ header {
     height: 30px;
     border: none;
     font-weight: bold;
+
+    &:hover {
+      background: #008bb3;
+    }
   }
 
 }
@@ -197,6 +230,7 @@ header {
   p {
     font-size: 14px;
   }
+
 }
 
 .col-5 h3 {
@@ -221,9 +255,12 @@ header {
   padding: 10px;
   color: white;
 }
+
+
 .col-7 h2 {
   font-size: 35px;
   line-height: 47px;
+
   .date {
     display: inline-block;
     margin-left: -70px;
@@ -232,20 +269,24 @@ header {
     float: left;
     line-height: 10px;
     margin-top: 13px;
+
     .number {
       padding: 0 10px;
       background: #f78f1d;
       display: block;
       line-height: 47px;
     }
+
     .month {
       font-size: 19px;
       text-transform: uppercase;
-      padding: 0 10px;
+      padding: 0 12px;
       background: #00aedb;
     }
+
   }
 }
+
 footer {
   .container {
     background: url("img/s3.img4.png") no-repeat top center;
@@ -301,17 +342,21 @@ footer {
   width: 33.33%;
   text-align: center;
 }
+
 .carousel {
   margin: 0 -18px;
 }
+
 .carousel-inner {
   padding: 0 18px;
 }
+
 .carousel-control-next, .carousel-control-prev {
   width: 2.5%;
   top: auto;
   bottom: 54px;
 }
+
 .carousel-control-prev {
   &:before {
     content: '';
@@ -320,11 +365,51 @@ footer {
     margin-left: -28px;
   }
 }
+
 .carousel-control-next {
   &:before {
     content: '';
     border: 16px solid transparent;
     border-left-color: #ec098d;
     margin-right: -28px;
+  }
+}
+
+#tagcloud {
+  [rel='12'] {
+    color: #f8962c !important;
+  }
+
+  [rel='12'],
+  [rel='10'] {
+    font-weight: bold !important;
+  }
+}
+
+.archive {
+  p {
+    border-bottom: 1px solid #cccccc;
+    padding-bottom: 10px;
+    position: relative;
+
+    &:before {
+      content: '';
+      border: 6px solid transparent;
+      border-left-color: #5463ad;
+      display: inline-block;
+      margin: 5px 7px 15px 5px;
+      float: left;
+    }
+
+    &:after {
+      content: '';
+      position: absolute;
+      display: block;
+      width: 20px;
+      height: 1px;
+      background: #fff;
+      bottom: -1px;
+      left: 0;
+    }
   }
 }

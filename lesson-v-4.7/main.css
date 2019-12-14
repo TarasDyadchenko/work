@@ -50,36 +50,63 @@ header {
         background: #898989; }
       header .btn-group .btn:nth-child(1) {
         background: #00aedb; }
+        header .btn-group .btn:nth-child(1):hover {
+          background: #0085a8; }
       header .btn-group .btn:nth-child(2) {
         background: #8cc63f; }
+        header .btn-group .btn:nth-child(2):hover {
+          background: #71a230; }
       header .btn-group .btn:nth-child(3) {
         background: #5261ac; }
+        header .btn-group .btn:nth-child(3):hover {
+          background: #424e89; }
       header .btn-group .btn:nth-child(4) {
         background: #00aedb; }
+        header .btn-group .btn:nth-child(4):hover {
+          background: #0085a8; }
       header .btn-group .btn:nth-child(5) {
         background: #f78f1d; }
+        header .btn-group .btn:nth-child(5):hover {
+          background: #d97508; }
       header .btn-group .btn:nth-child(6) {
         background: #ff0000; }
+        header .btn-group .btn:nth-child(6):hover {
+          background: #cc0000; }
       header .btn-group .btn:nth-child(7) {
         background: #898989; }
-  header form label {
-    float: left;
-    margin-right: -1px; }
-  header .col-4 {
+        header .btn-group .btn:nth-child(7):hover {
+          background: #707070; }
+  header input {
+    width: 244px; }
+  header form {
+    display: inline-block; }
+    header form label {
+      float: left;
+      margin-right: -1px;
+      margin-bottom: 0; }
+  header .col-3, header .col-6 {
     padding-top: 10px; }
-  header .fab {
+  header .fa-twitter-square {
     font-size: 40px;
     color: #00bff3; }
-  header .fas {
+    header .fa-twitter-square:hover {
+      color: #0097c0; }
+  header .fa-wifi {
     font-size: 40px;
     color: #f78f1d; }
-  header .fa-facebook-square:before {
-    content: "\f082";
+    header .fa-wifi:hover {
+      color: #d97508; }
+  header .fa-facebook-square {
+    font-size: 40px;
     color: #1e2059; }
+    header .fa-facebook-square:hover {
+      color: #111233; }
   header .socials {
     text-align: right; }
+    header .socials a:hover {
+      text-decoration: none; }
   header .btn-2 {
-    width: 107px;
+    width: 100px;
     font-size: 17px;
     background: #00aedb;
     color: white;
@@ -87,6 +114,8 @@ header {
     height: 30px;
     border: none;
     font-weight: bold; }
+    header .btn-2:hover {
+      background: #008bb3; }
 
 .carousel h3 {
   text-align: left;
@@ -164,7 +193,7 @@ header {
     .col-7 h2 .date .month {
       font-size: 19px;
       text-transform: uppercase;
-      padding: 0 10px;
+      padding: 0 12px;
       background: #00aedb; }
 
 footer .container {
@@ -228,5 +257,32 @@ footer .container {
   border: 16px solid transparent;
   border-left-color: #ec098d;
   margin-right: -28px; }
+
+#tagcloud [rel='12'] {
+  color: #f8962c !important; }
+#tagcloud [rel='12'],
+#tagcloud [rel='10'] {
+  font-weight: bold !important; }
+
+.archive p {
+  border-bottom: 1px solid #cccccc;
+  padding-bottom: 10px;
+  position: relative; }
+  .archive p:before {
+    content: '';
+    border: 6px solid transparent;
+    border-left-color: #5463ad;
+    display: inline-block;
+    margin: 5px 7px 15px 5px;
+    float: left; }
+  .archive p:after {
+    content: '';
+    position: absolute;
+    display: block;
+    width: 20px;
+    height: 1px;
+    background: #fff;
+    bottom: -1px;
+    left: 0; }
 
 /*# sourceMappingURL=main.css.map */
